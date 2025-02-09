@@ -7541,7 +7541,7 @@ a.anchor-link {
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>We are Gal (207906553) and Roy (324074566), computer science students with a strong passion for data science and its applications in healthcare.<br/>
 For our semester project, we sought to tackle a meaningful challenge while expanding our skill set.<br/>
-After exploring Kaggle competitions, we were immediately drawn to the ‘Equity in post-HCT Survival Predictions’ challenge.</p>
+After exploring Kaggle competitions, we were immediately drawn to the <a href="https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions">Equity in post-HCT Survival Predictions</a> challenge.</p>
 <p>This competition focuses on predicting survival probabilities for patients undergoing hematopoietic cell transplantation (HCT),<br/>
 with an emphasis on ensuring equitable outcomes across different racial groups.<br/>
 The evaluation metric used in this challenge is the Stratified Concordance Index (C-index),<br/>
@@ -8481,6 +8481,149 @@ Let’s see how it’s distributed!</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>As we can see, the data features equal representation across patients racial categories.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="Evaluation">Evaluation<a class="anchor-link" href="#Evaluation">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>Before we start creating models to predict our risk scores, we need to present our metric for their success.</p>
+<h3 id="Evaluation-Criteria">Evaluation Criteria<a class="anchor-link" href="#Evaluation-Criteria">¶</a></h3><p>The evaluation of prediction accuracy in the competition will involve a specialized metric known as the Stratified Concordance Index (C-index),<br/>
+adapted to consider different racial groups independently.<br/>
+This method allows us to gauge the predictive performance of models in a way that emphasizes equitability across diverse patient populations,<br/>
+particularly focusing on racial disparities in transplant outcomes.</p>
+<h3 id="Concordance-index">Concordance index<a class="anchor-link" href="#Concordance-index">¶</a></h3><p>It represents the global assessment of the model discrimination power:<br/>
+this is the model’s ability to correctly provide a reliable ranking of the survival times based on the individual risk scores.<br/>
+It can be computed with the following formula:</p>
+<p>The concordance index is a value between 0 and 1 where:</p>
+<p>0.5 is the expected result from random predictions,<br/>
+1.0 is a perfect concordance and,<br/>
+0.0 is perfect anti-concordance (multiply predictions with -1 to get 1.0)</p>
+<h3 id="Stratified-Concordance-Index">Stratified Concordance Index<a class="anchor-link" href="#Stratified-Concordance-Index">¶</a></h3><p>For this competition, we adjust the standard C-index to account for racial stratification,<br/>
+thus ensuring that each racial group's outcomes are weighed equally in the model evaluation.<br/>
+The stratified c-index is calculated as the mean minus the standard deviation of the c-index scores calculated within the recipient race categories,<br/>
+i.e., the score will be better if the mean c-index over the different race categories is large and the standard deviation of the c-indices over the race categories is small.<br/>
+This value will range from 0 to 1, 1 is the theoretical perfect score, but this value will practically be lower due to censored outcomes.</p>
+<p>The submitted risk scores will be evaluated using the score function.<br/>
+This evaluation process involves comparing the submitted risk scores against actual observed values (i.e., survival times and event occurrences) from a test dataset.<br/>
+The function specifically calculates the stratified concordance index across different racial groups,<br/>
+ensuring that the predictions are not only accurate overall but also equitable across diverse patient demographics.</p>
+<h3 id="Score">Score<a class="anchor-link" href="#Score">¶</a></h3><p>We copy the score function provided by the Kaggle competition.<br/>
+This function calculates the Stratified Concordance Index as described above.</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [32]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="sd">"""</span>
+<span class="sd">To evaluate the equitable prediction of transplant survival outcomes,</span>
+<span class="sd">we use the concordance index (C-index) between a series of event</span>
+<span class="sd">times and a predicted score across each race group.</span>
+<span class="sd"> </span>
+<span class="sd">It represents the global assessment of the model discrimination power:</span>
+<span class="sd">this is the model’s ability to correctly provide a reliable ranking</span>
+<span class="sd">of the survival times based on the individual risk scores.</span>
+<span class="sd"> </span>
+<span class="sd">The concordance index is a value between 0 and 1 where:</span>
+<span class="sd"> </span>
+<span class="sd">0.5 is the expected result from random predictions,</span>
+<span class="sd">1.0 is perfect concordance (with no censoring, otherwise &lt;1.0),</span>
+<span class="sd">0.0 is perfect anti-concordance (with no censoring, otherwise &gt;0.0)</span>
+
+<span class="sd">"""</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas.api.types</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">lifelines.utils</span><span class="w"> </span><span class="kn">import</span> <span class="n">concordance_index</span>
+
+<span class="k">class</span><span class="w"> </span><span class="nc">ParticipantVisibleError</span><span class="p">(</span><span class="ne">Exception</span><span class="p">):</span>
+    <span class="k">pass</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">score</span><span class="p">(</span><span class="n">solution</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">submission</span><span class="p">:</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">,</span> <span class="n">row_id_column_name</span><span class="p">:</span> <span class="nb">str</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">float</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""</span>
+<span class="sd">    &gt;&gt;&gt; import pandas as pd</span>
+<span class="sd">    &gt;&gt;&gt; row_id_column_name = "id"</span>
+<span class="sd">    &gt;&gt;&gt; y_pred = {'prediction': {0: 1.0, 1: 0.0, 2: 1.0}}</span>
+<span class="sd">    &gt;&gt;&gt; y_pred = pd.DataFrame(y_pred)</span>
+<span class="sd">    &gt;&gt;&gt; y_pred.insert(0, row_id_column_name, range(len(y_pred)))</span>
+<span class="sd">    &gt;&gt;&gt; y_true = { 'efs': {0: 1.0, 1: 0.0, 2: 0.0}, 'efs_time': {0: 25.1234,1: 250.1234,2: 2500.1234}, 'race_group': {0: 'race_group_1', 1: 'race_group_1', 2: 'race_group_1'}}</span>
+<span class="sd">    &gt;&gt;&gt; y_true = pd.DataFrame(y_true)</span>
+<span class="sd">    &gt;&gt;&gt; y_true.insert(0, row_id_column_name, range(len(y_true)))</span>
+<span class="sd">    &gt;&gt;&gt; score(y_true.copy(), y_pred.copy(), row_id_column_name)</span>
+<span class="sd">    0.75</span>
+<span class="sd">    """</span>
+    
+    <span class="k">del</span> <span class="n">solution</span><span class="p">[</span><span class="n">row_id_column_name</span><span class="p">]</span>
+    <span class="k">del</span> <span class="n">submission</span><span class="p">[</span><span class="n">row_id_column_name</span><span class="p">]</span>
+    
+    <span class="n">event_label</span> <span class="o">=</span> <span class="s1">'efs'</span>
+    <span class="n">interval_label</span> <span class="o">=</span> <span class="s1">'efs_time'</span>
+    <span class="n">prediction_label</span> <span class="o">=</span> <span class="s1">'prediction'</span>
+    <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">submission</span><span class="o">.</span><span class="n">columns</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">pandas</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_numeric_dtype</span><span class="p">(</span><span class="n">submission</span><span class="p">[</span><span class="n">col</span><span class="p">]):</span>
+            <span class="k">raise</span> <span class="n">ParticipantVisibleError</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Submission column </span><span class="si">{</span><span class="n">col</span><span class="si">}</span><span class="s1"> must be a number'</span><span class="p">)</span>
+    <span class="c1"># Merging solution and submission dfs on ID</span>
+    <span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">solution</span><span class="p">,</span> <span class="n">submission</span><span class="p">],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">merged_df</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="n">merged_df_race_dict</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">merged_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">'race_group'</span><span class="p">])</span><span class="o">.</span><span class="n">groups</span><span class="p">)</span>
+    <span class="n">metric_list</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">race</span> <span class="ow">in</span> <span class="n">merged_df_race_dict</span><span class="o">.</span><span class="n">keys</span><span class="p">():</span>
+        <span class="c1"># Retrieving values from y_test based on index</span>
+        <span class="n">indices</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">merged_df_race_dict</span><span class="p">[</span><span class="n">race</span><span class="p">])</span>
+        <span class="n">merged_df_race</span> <span class="o">=</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">indices</span><span class="p">]</span>
+        <span class="c1"># Calculate the concordance index</span>
+        <span class="n">c_index_race</span> <span class="o">=</span> <span class="n">concordance_index</span><span class="p">(</span>
+                        <span class="n">merged_df_race</span><span class="p">[</span><span class="n">interval_label</span><span class="p">],</span>
+                        <span class="o">-</span><span class="n">merged_df_race</span><span class="p">[</span><span class="n">prediction_label</span><span class="p">],</span>
+                        <span class="n">merged_df_race</span><span class="p">[</span><span class="n">event_label</span><span class="p">])</span>
+        <span class="n">metric_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">c_index_race</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">float</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">metric_list</span><span class="p">)</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">var</span><span class="p">(</span><span class="n">metric_list</span><span class="p">)))</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<h1 id="First-Attempt">First Attempt<a class="anchor-link" href="#First-Attempt">¶</a></h1>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
