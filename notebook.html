@@ -7922,13 +7922,10 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">test</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">f</span> <span class="o">!=</span> <span class="s1">'ID'</span><span class="p">]</span>
-
-<span class="c1"># cat_features = list(train.select_dtypes(object).columns)</span>
-<span class="c1"># train[cat_features] = train[cat_features].astype(str).astype('category')</span>
 
 <span class="n">race_groups</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">unique</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">race_group</span><span class="p">)</span>
 </pre></div>
@@ -9951,10 +9948,6 @@ This model expects the lower and upper bounds for the target in the form of a tw
 <h1 id="Target-transformation-models-and-regression-with-mean-squared-error">Target transformation models and regression with mean squared error<a class="anchor-link" href="#Target-transformation-models-and-regression-with-mean-squared-error">¶</a></h1><p>The competition task can be interpreted as predicting the order of events for the patients.<br/>
 Who has an event first? Who second? ... Who has an event last? and who survives without an event at all?<br/>
 With a suitable target transformation, we can apply the usual regression algorithms which optimize mse or similar metrics.</p>
-<p>As we saw in the EDA, patients with a known event, mostly have an <code>efs_time</code> between 0 and 15, whereas most unkowns have an <code>efs_time</code> between 15 and 160.<br/>
-This distribution is problematic for regression models.<br/>
-We want predictions to have high discriminative power for the patients who have a known event, but we don't need to distinguish between unkowns.<br/>
-We can achieve this result by stretching the range of the patients with a known event and compressing the range of the unkowns.</p>
 </div>
 </div>
 </div>
@@ -9965,7 +9958,11 @@ We can achieve this result by stretching the range of the patients with a known 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="Target-transformations">Target transformations<a class="anchor-link" href="#Target-transformations">¶</a></h3><p>The diagram shows how a typical target transformation stretches and compresses the ranges:</p>
+<h3 id="Target-transformations">Target transformations<a class="anchor-link" href="#Target-transformations">¶</a></h3><p>As we saw in the EDA, patients with a known event, mostly have an <code>efs_time</code> between 0 and 15, whereas most unkowns have an <code>efs_time</code> between 15 and 160.<br/>
+This distribution is problematic for regression models.<br/>
+We want predictions to have high discriminative power for the patients who have a known event, but we don't need to distinguish between unkowns.<br/>
+We can achieve this result by stretching the range of the patients with a known event and compressing the range of the unkowns.</p>
+<p>The diagram shows how a typical target transformation stretches and compresses the ranges:</p>
 </div>
 </div>
 </div>
@@ -11954,8 +11951,7 @@ Other top features (<code>dri_score</code>, <code>comorbidity_score</code>, etc.
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Race-group-inequality">Race group inequality<a class="anchor-link" href="#Race-group-inequality">¶</a></h3><p>With most models, the Asian predictions get the highest scores (best concordance index) and the predictions for white patients get the lowest scores (worst concordance).</p>
 <p>As the competition objective (equitability across diverse patient populations) rewards models with similar concordance scores for all six race groups,<br/>
-a possible strategy could be to artificially make the predictions for Asian patients worse.<br/>
-Obv</p>
+a possible strategy could be to artificially make the predictions for Asian patients worse.</p>
 </div>
 </div>
 </div>
