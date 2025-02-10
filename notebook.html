@@ -7539,7 +7539,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We are Gal (207906553) and Roy (324074566), computer science students with a strong passion for data science and its applications in healthcare.<br/>
+<p>We are Gal Elharar (207906553) and Roy Wolfer (324074566), computer science students with a strong passion for data science and its applications in healthcare.<br/>
 For our semester project, we sought to tackle a meaningful challenge while expanding our skill set.<br/>
 After exploring Kaggle competitions, we were immediately drawn to the <a href="https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions">Equity in post-HCT Survival Predictions</a> challenge.</p>
 <p>This competition focuses on predicting survival probabilities for patients undergoing hematopoietic cell transplantation (HCT),<br/>
@@ -7658,7 +7658,7 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [98]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [146]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
@@ -7704,7 +7704,7 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [99]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [147]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'datasets/train.csv'</span><span class="p">,</span> <span class="n">index_col</span><span class="o">=</span><span class="s1">'ID'</span><span class="p">)</span>
@@ -7721,7 +7721,7 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[99]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[147]:</div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <div>
 <style scoped="">
@@ -7922,7 +7922,7 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [ ]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [148]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">features</span> <span class="o">=</span> <span class="p">[</span><span class="n">f</span> <span class="k">for</span> <span class="n">f</span> <span class="ow">in</span> <span class="n">test</span><span class="o">.</span><span class="n">columns</span> <span class="k">if</span> <span class="n">f</span> <span class="o">!=</span> <span class="s1">'ID'</span><span class="p">]</span>
@@ -7949,7 +7949,7 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [101]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [149]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">show</span><span class="p">(</span><span class="n">data_dictionary</span><span class="p">,</span> <span class="n">scrollY</span><span class="o">=</span><span class="s2">"400px"</span><span class="p">,</span> <span class="n">scrollCollapse</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">paging</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">classes</span><span class="o">=</span><span class="s2">"display compact"</span><span class="p">,</span> <span class="n">columnDefs</span><span class="o">=</span><span class="p">[{</span><span class="s2">"className"</span><span class="p">:</span> <span class="s2">"dt-left"</span><span class="p">,</span> <span class="s2">"targets"</span><span class="p">:</span> <span class="s2">"_all"</span><span class="p">}],</span> <span class="n">layout</span><span class="o">=</span><span class="p">{</span><span class="s2">"topStart"</span><span class="p">:</span> <span class="s2">"search"</span><span class="p">,</span> <span class="s2">"topEnd"</span><span class="p">:</span> <span class="kc">None</span><span class="p">})</span>
@@ -7965,7 +7965,7 @@ To evaluate the predictions, the risk scores are compared to actual survival out
 <div class="jp-OutputArea-child">
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
-<table class="display compact" data-quarto-disable-processing="true" id="itables_6cfa28b7_fe75_49f0_ae37_f35cc2247cfc" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
+<table class="display compact" data-quarto-disable-processing="true" id="itables_2fbef64d_7abd_4f1e_944d_61c1a482cce0" style="table-layout:auto;width:auto;margin:auto;caption-side:bottom">
 <thead>
 <tr style="text-align: right;">
 <th>variable</th>
@@ -8036,7 +8036,7 @@ Loading ITables v2.2.4 from the internet...
 <script type="module">
     import {DataTable, jQuery as $} from 'https://www.unpkg.com/dt_for_itables@2.0.13/dt_bundle.js';
 
-    document.querySelectorAll("#itables_6cfa28b7_fe75_49f0_ae37_f35cc2247cfc:not(.dataTable)").forEach(table => {
+    document.querySelectorAll("#itables_2fbef64d_7abd_4f1e_944d_61c1a482cce0:not(.dataTable)").forEach(table => {
         if (!(table instanceof HTMLTableElement))
             return;
 
@@ -8083,7 +8083,7 @@ Because in no country of the world these six race groups occur with equal freque
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [102]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [150]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">race_counts</span> <span class="o">=</span> <span class="n">train</span><span class="o">.</span><span class="n">race_group</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span>
@@ -8126,7 +8126,7 @@ Because in no country of the world these six race groups occur with equal freque
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [103]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [151]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate missing values percentage</span>
@@ -8200,7 +8200,7 @@ Because in no country of the world these six race groups occur with equal freque
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [104]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [152]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">cat_features</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">train</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="nb">object</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span>
@@ -8226,7 +8226,7 @@ Because in no country of the world these six race groups occur with equal freque
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [105]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [153]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate missing values percentage</span>
@@ -8305,7 +8305,7 @@ Such a distribution is highly unnatural — it must be an artefact of the synthe
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [106]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [154]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
@@ -8353,7 +8353,7 @@ Such a distribution is highly unnatural — it must be an artefact of the synthe
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [107]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [155]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">_</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">sharex</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span> <span class="mi">9</span><span class="p">))</span>
@@ -8400,7 +8400,7 @@ Is hematopoietic cell transplantation a treatment which is often done to newborn
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [108]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [156]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">train</span><span class="o">.</span><span class="n">age_at_hct</span><span class="o">.</span><span class="n">value_counts</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -8414,7 +8414,7 @@ Is hematopoietic cell transplantation a treatment which is often done to newborn
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[108]:</div>
+<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[156]:</div>
 <div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain" tabindex="0">
 <pre>age_at_hct
 0.044     1005
@@ -8462,7 +8462,7 @@ The other half, without event for the first 20 months, has a high probability of
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [109]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [157]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">3</span><span class="p">))</span>
@@ -8509,7 +8509,7 @@ Patients with "more than one race" have the highest probability of event-free su
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [110]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [158]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">survival_function</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -8586,7 +8586,7 @@ High correlation (close to 1 or -1) means we might consider removing one of the 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [111]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [159]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Generate a correlation heatmap</span>
@@ -8621,16 +8621,16 @@ High correlation (close to 1 or -1) means we might consider removing one of the 
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <ol>
 <li><p>Some features have a very high correlation:<br/>
-Many HLA match features (hla_match_*, hla_high_res_*) are strongly correlated.<br/>
+Many HLA match features (<code>hla_match_*</code>, <code>hla_high_res_*</code>) are strongly correlated.<br/>
 This makes sense! They’re all measuring similar compatibility factors between donors and patients.<br/>
 Do we really need all of them? Maybe not! We might remove some duplicates to keep things simple.</p>
 </li>
-<li><p>Survival time (efs_time) seems Hard to predict:<br/>
-efs_time doesn’t have strong correlations with most features.<br/>
+<li><p>Survival time (<code>efs_time</code>) seems Hard to predict:<br/>
+<code>efs_time</code> doesn’t have strong correlations with most features.<br/>
 This tells us that survival time depends on many small factors rather than one big predictor.</p>
 </li>
 <li><p>Age and donor age:<br/>
-Patients (age_at_hct) and their donors (donor_age) show some relationship, but it's not very strong.</p>
+Patients (<code>age_at_hct</code>) and their donors (<code>donor_age</code>) show some relationship, but it's not very strong.</p>
 </li>
 <li><p>Health scores:<br/>
 Comorbidity score and Karnofsky score have some level of correlation with each other.<br/>
@@ -8659,7 +8659,7 @@ The overall score is the mean of all of the fold's scores.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [112]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [160]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">kf</span> <span class="o">=</span> <span class="n">StratifiedKFold</span><span class="p">(</span><span class="n">n_splits</span><span class="o">=</span><span class="mi">5</span> <span class="p">,</span><span class="n">shuffle</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">random_state</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -8742,7 +8742,7 @@ This model expects that the two target columns be combined into one (<code>y = n
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [113]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [161]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %%time</span>
@@ -8788,236 +8788,236 @@ This model expects that the two target columns be combined into one (<code>y = n
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_9253c_row0_col0, #T_9253c_row0_col4 {
+#T_1fd4d_row0_col0, #T_1fd4d_row0_col4 {
   background-color: #a55aff;
   color: #f1f1f1;
 }
-#T_9253c_row0_col1 {
+#T_1fd4d_row0_col1 {
   background-color: #b946ff;
   color: #f1f1f1;
 }
-#T_9253c_row0_col2 {
+#T_1fd4d_row0_col2 {
   background-color: #df20ff;
   color: #f1f1f1;
 }
-#T_9253c_row0_col3 {
+#T_1fd4d_row0_col3 {
   background-color: #6c93ff;
   color: #f1f1f1;
 }
-#T_9253c_row0_col5 {
+#T_1fd4d_row0_col5 {
   background-color: #a956ff;
   color: #f1f1f1;
 }
-#T_9253c_row1_col0 {
+#T_1fd4d_row1_col0 {
   background-color: #f30cff;
   color: #f1f1f1;
 }
-#T_9253c_row1_col1 {
+#T_1fd4d_row1_col1 {
   background-color: #ae51ff;
   color: #f1f1f1;
 }
-#T_9253c_row1_col2 {
+#T_1fd4d_row1_col2 {
   background-color: #a857ff;
   color: #f1f1f1;
 }
-#T_9253c_row1_col3 {
+#T_1fd4d_row1_col3 {
   background-color: #b54aff;
   color: #f1f1f1;
 }
-#T_9253c_row1_col4 {
+#T_1fd4d_row1_col4 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_9253c_row1_col5 {
+#T_1fd4d_row1_col5 {
   background-color: #cc33ff;
   color: #f1f1f1;
 }
-#T_9253c_row2_col0 {
+#T_1fd4d_row2_col0 {
   background-color: #8c73ff;
   color: #f1f1f1;
 }
-#T_9253c_row2_col1 {
+#T_1fd4d_row2_col1 {
   background-color: #22ddff;
   color: #000000;
 }
-#T_9253c_row2_col2 {
+#T_1fd4d_row2_col2 {
   background-color: #36c9ff;
   color: #000000;
 }
-#T_9253c_row2_col3 {
+#T_1fd4d_row2_col3 {
   background-color: #ca35ff;
   color: #f1f1f1;
 }
-#T_9253c_row2_col4, #T_9253c_row4_col0 {
+#T_1fd4d_row2_col4, #T_1fd4d_row4_col0 {
   background-color: #53acff;
   color: #f1f1f1;
 }
-#T_9253c_row2_col5 {
+#T_1fd4d_row2_col5 {
   background-color: #6798ff;
   color: #f1f1f1;
 }
-#T_9253c_row3_col0 {
+#T_1fd4d_row3_col0 {
   background-color: #a758ff;
   color: #f1f1f1;
 }
-#T_9253c_row3_col1 {
+#T_1fd4d_row3_col1 {
   background-color: #9d62ff;
   color: #f1f1f1;
 }
-#T_9253c_row3_col2 {
+#T_1fd4d_row3_col2 {
   background-color: #7c83ff;
   color: #f1f1f1;
 }
-#T_9253c_row3_col3 {
+#T_1fd4d_row3_col3 {
   background-color: #728dff;
   color: #f1f1f1;
 }
-#T_9253c_row3_col4 {
+#T_1fd4d_row3_col4 {
   background-color: #ac53ff;
   color: #f1f1f1;
 }
-#T_9253c_row3_col5 {
+#T_1fd4d_row3_col5 {
   background-color: #936cff;
   color: #f1f1f1;
 }
-#T_9253c_row4_col1 {
+#T_1fd4d_row4_col1 {
   background-color: #837cff;
   color: #f1f1f1;
 }
-#T_9253c_row4_col2 {
+#T_1fd4d_row4_col2 {
   background-color: #3bc4ff;
   color: #000000;
 }
-#T_9253c_row4_col3 {
+#T_1fd4d_row4_col3 {
   background-color: #59a6ff;
   color: #f1f1f1;
 }
-#T_9253c_row4_col4 {
+#T_1fd4d_row4_col4 {
   background-color: #9768ff;
   color: #f1f1f1;
 }
-#T_9253c_row4_col5 {
+#T_1fd4d_row4_col5 {
   background-color: #6699ff;
   color: #f1f1f1;
 }
-#T_9253c_row5_col0 {
+#T_1fd4d_row5_col0 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_9253c_row5_col1 {
+#T_1fd4d_row5_col1 {
   background-color: #30cfff;
   color: #000000;
 }
-#T_9253c_row5_col2 {
+#T_1fd4d_row5_col2 {
   background-color: #629dff;
   color: #f1f1f1;
 }
-#T_9253c_row5_col3 {
+#T_1fd4d_row5_col3 {
   background-color: #8f70ff;
   color: #f1f1f1;
 }
-#T_9253c_row5_col4 {
+#T_1fd4d_row5_col4 {
   background-color: #6e91ff;
   color: #f1f1f1;
 }
-#T_9253c_row5_col5 {
+#T_1fd4d_row5_col5 {
   background-color: #4fb0ff;
   color: #f1f1f1;
 }
 </style>
-<table id="T_9253c">
+<table id="T_1fd4d">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_9253c_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_9253c_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_9253c_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_9253c_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_9253c_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_9253c_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_1fd4d_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_1fd4d_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_1fd4d_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_1fd4d_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_1fd4d_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_1fd4d_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_9253c_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_9253c_row0_col0">0.689</td>
-<td class="data row0 col1" id="T_9253c_row0_col1">0.693</td>
-<td class="data row0 col2" id="T_9253c_row0_col2">0.702</td>
-<td class="data row0 col3" id="T_9253c_row0_col3">0.677</td>
-<td class="data row0 col4" id="T_9253c_row0_col4">0.689</td>
-<td class="data row0 col5" id="T_9253c_row0_col5">0.690</td>
+<th class="row_heading level0 row0" id="T_1fd4d_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_1fd4d_row0_col0">0.689</td>
+<td class="data row0 col1" id="T_1fd4d_row0_col1">0.693</td>
+<td class="data row0 col2" id="T_1fd4d_row0_col2">0.702</td>
+<td class="data row0 col3" id="T_1fd4d_row0_col3">0.677</td>
+<td class="data row0 col4" id="T_1fd4d_row0_col4">0.689</td>
+<td class="data row0 col5" id="T_1fd4d_row0_col5">0.690</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_9253c_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_9253c_row1_col0">0.706</td>
-<td class="data row1 col1" id="T_9253c_row1_col1">0.691</td>
-<td class="data row1 col2" id="T_9253c_row1_col2">0.690</td>
-<td class="data row1 col3" id="T_9253c_row1_col3">0.693</td>
-<td class="data row1 col4" id="T_9253c_row1_col4">0.709</td>
-<td class="data row1 col5" id="T_9253c_row1_col5">0.698</td>
+<th class="row_heading level0 row1" id="T_1fd4d_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_1fd4d_row1_col0">0.706</td>
+<td class="data row1 col1" id="T_1fd4d_row1_col1">0.691</td>
+<td class="data row1 col2" id="T_1fd4d_row1_col2">0.690</td>
+<td class="data row1 col3" id="T_1fd4d_row1_col3">0.693</td>
+<td class="data row1 col4" id="T_1fd4d_row1_col4">0.709</td>
+<td class="data row1 col5" id="T_1fd4d_row1_col5">0.698</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_9253c_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_9253c_row2_col0">0.684</td>
-<td class="data row2 col1" id="T_9253c_row2_col1">0.661</td>
-<td class="data row2 col2" id="T_9253c_row2_col2">0.665</td>
-<td class="data row2 col3" id="T_9253c_row2_col3">0.697</td>
-<td class="data row2 col4" id="T_9253c_row2_col4">0.671</td>
-<td class="data row2 col5" id="T_9253c_row2_col5">0.676</td>
+<th class="row_heading level0 row2" id="T_1fd4d_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_1fd4d_row2_col0">0.684</td>
+<td class="data row2 col1" id="T_1fd4d_row2_col1">0.661</td>
+<td class="data row2 col2" id="T_1fd4d_row2_col2">0.665</td>
+<td class="data row2 col3" id="T_1fd4d_row2_col3">0.697</td>
+<td class="data row2 col4" id="T_1fd4d_row2_col4">0.671</td>
+<td class="data row2 col5" id="T_1fd4d_row2_col5">0.676</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_9253c_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_9253c_row3_col0">0.690</td>
-<td class="data row3 col1" id="T_9253c_row3_col1">0.687</td>
-<td class="data row3 col2" id="T_9253c_row3_col2">0.680</td>
-<td class="data row3 col3" id="T_9253c_row3_col3">0.678</td>
-<td class="data row3 col4" id="T_9253c_row3_col4">0.691</td>
-<td class="data row3 col5" id="T_9253c_row3_col5">0.685</td>
+<th class="row_heading level0 row3" id="T_1fd4d_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_1fd4d_row3_col0">0.690</td>
+<td class="data row3 col1" id="T_1fd4d_row3_col1">0.687</td>
+<td class="data row3 col2" id="T_1fd4d_row3_col2">0.680</td>
+<td class="data row3 col3" id="T_1fd4d_row3_col3">0.678</td>
+<td class="data row3 col4" id="T_1fd4d_row3_col4">0.691</td>
+<td class="data row3 col5" id="T_1fd4d_row3_col5">0.685</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_9253c_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_9253c_row4_col0">0.671</td>
-<td class="data row4 col1" id="T_9253c_row4_col1">0.682</td>
-<td class="data row4 col2" id="T_9253c_row4_col2">0.666</td>
-<td class="data row4 col3" id="T_9253c_row4_col3">0.673</td>
-<td class="data row4 col4" id="T_9253c_row4_col4">0.686</td>
-<td class="data row4 col5" id="T_9253c_row4_col5">0.676</td>
+<th class="row_heading level0 row4" id="T_1fd4d_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_1fd4d_row4_col0">0.671</td>
+<td class="data row4 col1" id="T_1fd4d_row4_col1">0.682</td>
+<td class="data row4 col2" id="T_1fd4d_row4_col2">0.666</td>
+<td class="data row4 col3" id="T_1fd4d_row4_col3">0.673</td>
+<td class="data row4 col4" id="T_1fd4d_row4_col4">0.686</td>
+<td class="data row4 col5" id="T_1fd4d_row4_col5">0.676</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_9253c_level0_row5">White</th>
-<td class="data row5 col0" id="T_9253c_row5_col0">0.653</td>
-<td class="data row5 col1" id="T_9253c_row5_col1">0.664</td>
-<td class="data row5 col2" id="T_9253c_row5_col2">0.675</td>
-<td class="data row5 col3" id="T_9253c_row5_col3">0.684</td>
-<td class="data row5 col4" id="T_9253c_row5_col4">0.677</td>
-<td class="data row5 col5" id="T_9253c_row5_col5">0.671</td>
+<th class="row_heading level0 row5" id="T_1fd4d_level0_row5">White</th>
+<td class="data row5 col0" id="T_1fd4d_row5_col0">0.653</td>
+<td class="data row5 col1" id="T_1fd4d_row5_col1">0.664</td>
+<td class="data row5 col2" id="T_1fd4d_row5_col2">0.675</td>
+<td class="data row5 col3" id="T_1fd4d_row5_col3">0.684</td>
+<td class="data row5 col4" id="T_1fd4d_row5_col4">0.677</td>
+<td class="data row5 col5" id="T_1fd4d_row5_col5">0.671</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_9253c_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_9253c_foot0_row0_col0">0.682</td>
-<td class="foot0_data foot0_row0 col1" id="T_9253c_foot0_row0_col1">0.680</td>
-<td class="foot0_data foot0_row0 col2" id="T_9253c_foot0_row0_col2">0.680</td>
-<td class="foot0_data foot0_row0 col3" id="T_9253c_foot0_row0_col3">0.684</td>
-<td class="foot0_data foot0_row0 col4" id="T_9253c_foot0_row0_col4">0.687</td>
-<td class="foot0_data foot0_row0 col5" id="T_9253c_foot0_row0_col5">0.682</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_1fd4d_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_1fd4d_foot0_row0_col0">0.682</td>
+<td class="foot0_data foot0_row0 col1" id="T_1fd4d_foot0_row0_col1">0.680</td>
+<td class="foot0_data foot0_row0 col2" id="T_1fd4d_foot0_row0_col2">0.680</td>
+<td class="foot0_data foot0_row0 col3" id="T_1fd4d_foot0_row0_col3">0.684</td>
+<td class="foot0_data foot0_row0 col4" id="T_1fd4d_foot0_row0_col4">0.687</td>
+<td class="foot0_data foot0_row0 col5" id="T_1fd4d_foot0_row0_col5">0.682</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_9253c_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_9253c_foot0_row1_col0">0.016</td>
-<td class="foot0_data foot0_row1 col1" id="T_9253c_foot0_row1_col1">0.013</td>
-<td class="foot0_data foot0_row1 col2" id="T_9253c_foot0_row1_col2">0.013</td>
-<td class="foot0_data foot0_row1 col3" id="T_9253c_foot0_row1_col3">0.009</td>
-<td class="foot0_data foot0_row1 col4" id="T_9253c_foot0_row1_col4">0.012</td>
-<td class="foot0_data foot0_row1 col5" id="T_9253c_foot0_row1_col5">0.013</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_1fd4d_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_1fd4d_foot0_row1_col0">0.016</td>
+<td class="foot0_data foot0_row1 col1" id="T_1fd4d_foot0_row1_col1">0.013</td>
+<td class="foot0_data foot0_row1 col2" id="T_1fd4d_foot0_row1_col2">0.013</td>
+<td class="foot0_data foot0_row1 col3" id="T_1fd4d_foot0_row1_col3">0.009</td>
+<td class="foot0_data foot0_row1 col4" id="T_1fd4d_foot0_row1_col4">0.012</td>
+<td class="foot0_data foot0_row1 col5" id="T_1fd4d_foot0_row1_col5">0.013</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_9253c_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_9253c_foot0_row2_col0">0.666</td>
-<td class="foot0_data foot0_row2 col1" id="T_9253c_foot0_row2_col1">0.667</td>
-<td class="foot0_data foot0_row2 col2" id="T_9253c_foot0_row2_col2">0.667</td>
-<td class="foot0_data foot0_row2 col3" id="T_9253c_foot0_row2_col3">0.675</td>
-<td class="foot0_data foot0_row2 col4" id="T_9253c_foot0_row2_col4">0.675</td>
-<td class="foot0_data foot0_row2 col5" id="T_9253c_foot0_row2_col5">0.670</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_1fd4d_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_1fd4d_foot0_row2_col0">0.666</td>
+<td class="foot0_data foot0_row2 col1" id="T_1fd4d_foot0_row2_col1">0.667</td>
+<td class="foot0_data foot0_row2 col2" id="T_1fd4d_foot0_row2_col2">0.667</td>
+<td class="foot0_data foot0_row2 col3" id="T_1fd4d_foot0_row2_col3">0.675</td>
+<td class="foot0_data foot0_row2 col4" id="T_1fd4d_foot0_row2_col4">0.675</td>
+<td class="foot0_data foot0_row2 col5" id="T_1fd4d_foot0_row2_col5">0.670</td>
 </tr>
 </tbody>
 </table>
@@ -9042,7 +9042,7 @@ This model expects the targets in the same format as the XGBoost Cox model.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [114]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [162]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %%time</span>
@@ -9088,232 +9088,232 @@ This model expects the targets in the same format as the XGBoost Cox model.</p>
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_ebf71_row0_col0 {
+#T_adf9c_row0_col0 {
   background-color: #a857ff;
   color: #f1f1f1;
 }
-#T_ebf71_row0_col1 {
+#T_adf9c_row0_col1 {
   background-color: #ee11ff;
   color: #f1f1f1;
 }
-#T_ebf71_row0_col2 {
+#T_adf9c_row0_col2 {
   background-color: #dc23ff;
   color: #f1f1f1;
 }
-#T_ebf71_row0_col3 {
+#T_adf9c_row0_col3 {
   background-color: #6798ff;
   color: #f1f1f1;
 }
-#T_ebf71_row0_col4, #T_ebf71_row3_col0 {
+#T_adf9c_row0_col4, #T_adf9c_row3_col0 {
   background-color: #b14eff;
   color: #f1f1f1;
 }
-#T_ebf71_row0_col5 {
+#T_adf9c_row0_col5 {
   background-color: #b54aff;
   color: #f1f1f1;
 }
-#T_ebf71_row1_col0 {
+#T_adf9c_row1_col0 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_ebf71_row1_col1 {
+#T_adf9c_row1_col1 {
   background-color: #c03fff;
   color: #f1f1f1;
 }
-#T_ebf71_row1_col2 {
+#T_adf9c_row1_col2 {
   background-color: #926dff;
   color: #f1f1f1;
 }
-#T_ebf71_row1_col3 {
+#T_adf9c_row1_col3 {
   background-color: #c738ff;
   color: #f1f1f1;
 }
-#T_ebf71_row1_col4 {
+#T_adf9c_row1_col4 {
   background-color: #fd02ff;
   color: #f1f1f1;
 }
-#T_ebf71_row1_col5 {
+#T_adf9c_row1_col5 {
   background-color: #d12eff;
   color: #f1f1f1;
 }
-#T_ebf71_row2_col0 {
+#T_adf9c_row2_col0 {
   background-color: #609fff;
   color: #f1f1f1;
 }
-#T_ebf71_row2_col1 {
+#T_adf9c_row2_col1 {
   background-color: #29d6ff;
   color: #000000;
 }
-#T_ebf71_row2_col2 {
+#T_adf9c_row2_col2 {
   background-color: #51aeff;
   color: #f1f1f1;
 }
-#T_ebf71_row2_col3 {
+#T_adf9c_row2_col3 {
   background-color: #b24dff;
   color: #f1f1f1;
 }
-#T_ebf71_row2_col4 {
+#T_adf9c_row2_col4 {
   background-color: #49b6ff;
   color: #000000;
 }
-#T_ebf71_row2_col5 {
+#T_adf9c_row2_col5 {
   background-color: #5ea1ff;
   color: #f1f1f1;
 }
-#T_ebf71_row3_col1 {
+#T_adf9c_row3_col1 {
   background-color: #a659ff;
   color: #f1f1f1;
 }
-#T_ebf71_row3_col2 {
+#T_adf9c_row3_col2 {
   background-color: #7b84ff;
   color: #f1f1f1;
 }
-#T_ebf71_row3_col3, #T_ebf71_row4_col3 {
+#T_adf9c_row3_col3, #T_adf9c_row4_col3 {
   background-color: #659aff;
   color: #f1f1f1;
 }
-#T_ebf71_row3_col4 {
+#T_adf9c_row3_col4 {
   background-color: #906fff;
   color: #f1f1f1;
 }
-#T_ebf71_row3_col5 {
+#T_adf9c_row3_col5 {
   background-color: #8e71ff;
   color: #f1f1f1;
 }
-#T_ebf71_row4_col0 {
+#T_adf9c_row4_col0 {
   background-color: #42bdff;
   color: #000000;
 }
-#T_ebf71_row4_col1 {
+#T_adf9c_row4_col1 {
   background-color: #8c73ff;
   color: #f1f1f1;
 }
-#T_ebf71_row4_col2 {
+#T_adf9c_row4_col2 {
   background-color: #47b8ff;
   color: #000000;
 }
-#T_ebf71_row4_col4 {
+#T_adf9c_row4_col4 {
   background-color: #b649ff;
   color: #f1f1f1;
 }
-#T_ebf71_row4_col5 {
+#T_adf9c_row4_col5 {
   background-color: #708fff;
   color: #f1f1f1;
 }
-#T_ebf71_row5_col0 {
+#T_adf9c_row5_col0 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_ebf71_row5_col1 {
+#T_adf9c_row5_col1 {
   background-color: #20dfff;
   color: #000000;
 }
-#T_ebf71_row5_col2, #T_ebf71_row5_col4 {
+#T_adf9c_row5_col2, #T_adf9c_row5_col4 {
   background-color: #5ba4ff;
   color: #f1f1f1;
 }
-#T_ebf71_row5_col3 {
+#T_adf9c_row5_col3 {
   background-color: #57a8ff;
   color: #f1f1f1;
 }
-#T_ebf71_row5_col5 {
+#T_adf9c_row5_col5 {
   background-color: #3cc3ff;
   color: #000000;
 }
 </style>
-<table id="T_ebf71">
+<table id="T_adf9c">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_ebf71_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_ebf71_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_ebf71_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_ebf71_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_ebf71_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_ebf71_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_adf9c_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_adf9c_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_adf9c_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_adf9c_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_adf9c_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_adf9c_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_ebf71_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_ebf71_row0_col0">0.689</td>
-<td class="data row0 col1" id="T_ebf71_row0_col1">0.703</td>
-<td class="data row0 col2" id="T_ebf71_row0_col2">0.699</td>
-<td class="data row0 col3" id="T_ebf71_row0_col3">0.676</td>
-<td class="data row0 col4" id="T_ebf71_row0_col4">0.691</td>
-<td class="data row0 col5" id="T_ebf71_row0_col5">0.692</td>
+<th class="row_heading level0 row0" id="T_adf9c_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_adf9c_row0_col0">0.689</td>
+<td class="data row0 col1" id="T_adf9c_row0_col1">0.703</td>
+<td class="data row0 col2" id="T_adf9c_row0_col2">0.699</td>
+<td class="data row0 col3" id="T_adf9c_row0_col3">0.676</td>
+<td class="data row0 col4" id="T_adf9c_row0_col4">0.691</td>
+<td class="data row0 col5" id="T_adf9c_row0_col5">0.692</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_ebf71_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_ebf71_row1_col0">0.706</td>
-<td class="data row1 col1" id="T_ebf71_row1_col1">0.694</td>
-<td class="data row1 col2" id="T_ebf71_row1_col2">0.685</td>
-<td class="data row1 col3" id="T_ebf71_row1_col3">0.695</td>
-<td class="data row1 col4" id="T_ebf71_row1_col4">0.706</td>
-<td class="data row1 col5" id="T_ebf71_row1_col5">0.697</td>
+<th class="row_heading level0 row1" id="T_adf9c_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_adf9c_row1_col0">0.706</td>
+<td class="data row1 col1" id="T_adf9c_row1_col1">0.694</td>
+<td class="data row1 col2" id="T_adf9c_row1_col2">0.685</td>
+<td class="data row1 col3" id="T_adf9c_row1_col3">0.695</td>
+<td class="data row1 col4" id="T_adf9c_row1_col4">0.706</td>
+<td class="data row1 col5" id="T_adf9c_row1_col5">0.697</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_ebf71_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_ebf71_row2_col0">0.675</td>
-<td class="data row2 col1" id="T_ebf71_row2_col1">0.664</td>
-<td class="data row2 col2" id="T_ebf71_row2_col2">0.672</td>
-<td class="data row2 col3" id="T_ebf71_row2_col3">0.691</td>
-<td class="data row2 col4" id="T_ebf71_row2_col4">0.670</td>
-<td class="data row2 col5" id="T_ebf71_row2_col5">0.674</td>
+<th class="row_heading level0 row2" id="T_adf9c_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_adf9c_row2_col0">0.675</td>
+<td class="data row2 col1" id="T_adf9c_row2_col1">0.664</td>
+<td class="data row2 col2" id="T_adf9c_row2_col2">0.672</td>
+<td class="data row2 col3" id="T_adf9c_row2_col3">0.691</td>
+<td class="data row2 col4" id="T_adf9c_row2_col4">0.670</td>
+<td class="data row2 col5" id="T_adf9c_row2_col5">0.674</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_ebf71_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_ebf71_row3_col0">0.691</td>
-<td class="data row3 col1" id="T_ebf71_row3_col1">0.689</td>
-<td class="data row3 col2" id="T_ebf71_row3_col2">0.680</td>
-<td class="data row3 col3" id="T_ebf71_row3_col3">0.676</td>
-<td class="data row3 col4" id="T_ebf71_row3_col4">0.684</td>
-<td class="data row3 col5" id="T_ebf71_row3_col5">0.684</td>
+<th class="row_heading level0 row3" id="T_adf9c_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_adf9c_row3_col0">0.691</td>
+<td class="data row3 col1" id="T_adf9c_row3_col1">0.689</td>
+<td class="data row3 col2" id="T_adf9c_row3_col2">0.680</td>
+<td class="data row3 col3" id="T_adf9c_row3_col3">0.676</td>
+<td class="data row3 col4" id="T_adf9c_row3_col4">0.684</td>
+<td class="data row3 col5" id="T_adf9c_row3_col5">0.684</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_ebf71_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_ebf71_row4_col0">0.669</td>
-<td class="data row4 col1" id="T_ebf71_row4_col1">0.683</td>
-<td class="data row4 col2" id="T_ebf71_row4_col2">0.670</td>
-<td class="data row4 col3" id="T_ebf71_row4_col3">0.676</td>
-<td class="data row4 col4" id="T_ebf71_row4_col4">0.692</td>
-<td class="data row4 col5" id="T_ebf71_row4_col5">0.678</td>
+<th class="row_heading level0 row4" id="T_adf9c_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_adf9c_row4_col0">0.669</td>
+<td class="data row4 col1" id="T_adf9c_row4_col1">0.683</td>
+<td class="data row4 col2" id="T_adf9c_row4_col2">0.670</td>
+<td class="data row4 col3" id="T_adf9c_row4_col3">0.676</td>
+<td class="data row4 col4" id="T_adf9c_row4_col4">0.692</td>
+<td class="data row4 col5" id="T_adf9c_row4_col5">0.678</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_ebf71_level0_row5">White</th>
-<td class="data row5 col0" id="T_ebf71_row5_col0">0.656</td>
-<td class="data row5 col1" id="T_ebf71_row5_col1">0.662</td>
-<td class="data row5 col2" id="T_ebf71_row5_col2">0.674</td>
-<td class="data row5 col3" id="T_ebf71_row5_col3">0.673</td>
-<td class="data row5 col4" id="T_ebf71_row5_col4">0.674</td>
-<td class="data row5 col5" id="T_ebf71_row5_col5">0.668</td>
+<th class="row_heading level0 row5" id="T_adf9c_level0_row5">White</th>
+<td class="data row5 col0" id="T_adf9c_row5_col0">0.656</td>
+<td class="data row5 col1" id="T_adf9c_row5_col1">0.662</td>
+<td class="data row5 col2" id="T_adf9c_row5_col2">0.674</td>
+<td class="data row5 col3" id="T_adf9c_row5_col3">0.673</td>
+<td class="data row5 col4" id="T_adf9c_row5_col4">0.674</td>
+<td class="data row5 col5" id="T_adf9c_row5_col5">0.668</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_ebf71_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_ebf71_foot0_row0_col0">0.681</td>
-<td class="foot0_data foot0_row0 col1" id="T_ebf71_foot0_row0_col1">0.682</td>
-<td class="foot0_data foot0_row0 col2" id="T_ebf71_foot0_row0_col2">0.680</td>
-<td class="foot0_data foot0_row0 col3" id="T_ebf71_foot0_row0_col3">0.681</td>
-<td class="foot0_data foot0_row0 col4" id="T_ebf71_foot0_row0_col4">0.686</td>
-<td class="foot0_data foot0_row0 col5" id="T_ebf71_foot0_row0_col5">0.682</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_adf9c_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_adf9c_foot0_row0_col0">0.681</td>
+<td class="foot0_data foot0_row0 col1" id="T_adf9c_foot0_row0_col1">0.682</td>
+<td class="foot0_data foot0_row0 col2" id="T_adf9c_foot0_row0_col2">0.680</td>
+<td class="foot0_data foot0_row0 col3" id="T_adf9c_foot0_row0_col3">0.681</td>
+<td class="foot0_data foot0_row0 col4" id="T_adf9c_foot0_row0_col4">0.686</td>
+<td class="foot0_data foot0_row0 col5" id="T_adf9c_foot0_row0_col5">0.682</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_ebf71_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_ebf71_foot0_row1_col0">0.016</td>
-<td class="foot0_data foot0_row1 col1" id="T_ebf71_foot0_row1_col1">0.015</td>
-<td class="foot0_data foot0_row1 col2" id="T_ebf71_foot0_row1_col2">0.010</td>
-<td class="foot0_data foot0_row1 col3" id="T_ebf71_foot0_row1_col3">0.009</td>
-<td class="foot0_data foot0_row1 col4" id="T_ebf71_foot0_row1_col4">0.012</td>
-<td class="foot0_data foot0_row1 col5" id="T_ebf71_foot0_row1_col5">0.012</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_adf9c_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_adf9c_foot0_row1_col0">0.016</td>
+<td class="foot0_data foot0_row1 col1" id="T_adf9c_foot0_row1_col1">0.015</td>
+<td class="foot0_data foot0_row1 col2" id="T_adf9c_foot0_row1_col2">0.010</td>
+<td class="foot0_data foot0_row1 col3" id="T_adf9c_foot0_row1_col3">0.009</td>
+<td class="foot0_data foot0_row1 col4" id="T_adf9c_foot0_row1_col4">0.012</td>
+<td class="foot0_data foot0_row1 col5" id="T_adf9c_foot0_row1_col5">0.012</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_ebf71_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_ebf71_foot0_row2_col0">0.665</td>
-<td class="foot0_data foot0_row2 col1" id="T_ebf71_foot0_row2_col1">0.668</td>
-<td class="foot0_data foot0_row2 col2" id="T_ebf71_foot0_row2_col2">0.670</td>
-<td class="foot0_data foot0_row2 col3" id="T_ebf71_foot0_row2_col3">0.673</td>
-<td class="foot0_data foot0_row2 col4" id="T_ebf71_foot0_row2_col4">0.674</td>
-<td class="foot0_data foot0_row2 col5" id="T_ebf71_foot0_row2_col5">0.670</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_adf9c_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_adf9c_foot0_row2_col0">0.665</td>
+<td class="foot0_data foot0_row2 col1" id="T_adf9c_foot0_row2_col1">0.668</td>
+<td class="foot0_data foot0_row2 col2" id="T_adf9c_foot0_row2_col2">0.670</td>
+<td class="foot0_data foot0_row2 col3" id="T_adf9c_foot0_row2_col3">0.673</td>
+<td class="foot0_data foot0_row2 col4" id="T_adf9c_foot0_row2_col4">0.674</td>
+<td class="foot0_data foot0_row2 col5" id="T_adf9c_foot0_row2_col5">0.670</td>
 </tr>
 </tbody>
 </table>
@@ -9351,7 +9351,7 @@ This model expects the lower and upper bounds for the target in a special form i
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [115]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [163]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %%time</span>
@@ -9402,236 +9402,236 @@ This model expects the lower and upper bounds for the target in a special form i
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_70855_row0_col0 {
+#T_8f97a_row0_col0 {
   background-color: #ad52ff;
   color: #f1f1f1;
 }
-#T_70855_row0_col1 {
+#T_8f97a_row0_col1 {
   background-color: #ce31ff;
   color: #f1f1f1;
 }
-#T_70855_row0_col2 {
+#T_8f97a_row0_col2 {
   background-color: #c43bff;
   color: #f1f1f1;
 }
-#T_70855_row0_col3 {
+#T_8f97a_row0_col3 {
   background-color: #7d82ff;
   color: #f1f1f1;
 }
-#T_70855_row0_col4 {
+#T_8f97a_row0_col4 {
   background-color: #b748ff;
   color: #f1f1f1;
 }
-#T_70855_row0_col5 {
+#T_8f97a_row0_col5 {
   background-color: #b14eff;
   color: #f1f1f1;
 }
-#T_70855_row1_col0 {
+#T_8f97a_row1_col0 {
   background-color: #f906ff;
   color: #f1f1f1;
 }
-#T_70855_row1_col1 {
+#T_8f97a_row1_col1 {
   background-color: #d52aff;
   color: #f1f1f1;
 }
-#T_70855_row1_col2 {
+#T_8f97a_row1_col2 {
   background-color: #9e61ff;
   color: #f1f1f1;
 }
-#T_70855_row1_col3, #T_70855_row2_col3 {
+#T_8f97a_row1_col3, #T_8f97a_row2_col3 {
   background-color: #b44bff;
   color: #f1f1f1;
 }
-#T_70855_row1_col4 {
+#T_8f97a_row1_col4 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_70855_row1_col5 {
+#T_8f97a_row1_col5 {
   background-color: #d32cff;
   color: #f1f1f1;
 }
-#T_70855_row2_col0 {
+#T_8f97a_row2_col0 {
   background-color: #906fff;
   color: #f1f1f1;
 }
-#T_70855_row2_col1, #T_70855_row5_col0 {
+#T_8f97a_row2_col1, #T_8f97a_row5_col0 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_70855_row2_col2 {
+#T_8f97a_row2_col2 {
   background-color: #39c6ff;
   color: #000000;
 }
-#T_70855_row2_col4 {
+#T_8f97a_row2_col4 {
   background-color: #50afff;
   color: #f1f1f1;
 }
-#T_70855_row2_col5 {
+#T_8f97a_row2_col5 {
   background-color: #5ca3ff;
   color: #f1f1f1;
 }
-#T_70855_row3_col0 {
+#T_8f97a_row3_col0 {
   background-color: #ca35ff;
   color: #f1f1f1;
 }
-#T_70855_row3_col1 {
+#T_8f97a_row3_col1 {
   background-color: #a15eff;
   color: #f1f1f1;
 }
-#T_70855_row3_col2 {
+#T_8f97a_row3_col2 {
   background-color: #9f60ff;
   color: #f1f1f1;
 }
-#T_70855_row3_col3 {
+#T_8f97a_row3_col3 {
   background-color: #7a85ff;
   color: #f1f1f1;
 }
-#T_70855_row3_col4 {
+#T_8f97a_row3_col4 {
   background-color: #a659ff;
   color: #f1f1f1;
 }
-#T_70855_row3_col5 {
+#T_8f97a_row3_col5 {
   background-color: #a25dff;
   color: #f1f1f1;
 }
-#T_70855_row4_col0 {
+#T_8f97a_row4_col0 {
   background-color: #35caff;
   color: #000000;
 }
-#T_70855_row4_col1 {
+#T_8f97a_row4_col1 {
   background-color: #807fff;
   color: #f1f1f1;
 }
-#T_70855_row4_col2 {
+#T_8f97a_row4_col2 {
   background-color: #4db2ff;
   color: #f1f1f1;
 }
-#T_70855_row4_col3 {
+#T_8f97a_row4_col3 {
   background-color: #609fff;
   color: #f1f1f1;
 }
-#T_70855_row4_col4 {
+#T_8f97a_row4_col4 {
   background-color: #ba45ff;
   color: #f1f1f1;
 }
-#T_70855_row4_col5 {
+#T_8f97a_row4_col5 {
   background-color: #6c93ff;
   color: #f1f1f1;
 }
-#T_70855_row5_col1 {
+#T_8f97a_row5_col1 {
   background-color: #41beff;
   color: #000000;
 }
-#T_70855_row5_col2 {
+#T_8f97a_row5_col2 {
   background-color: #6a95ff;
   color: #f1f1f1;
 }
-#T_70855_row5_col3 {
+#T_8f97a_row5_col3 {
   background-color: #639cff;
   color: #f1f1f1;
 }
-#T_70855_row5_col4 {
+#T_8f97a_row5_col4 {
   background-color: #7986ff;
   color: #f1f1f1;
 }
-#T_70855_row5_col5 {
+#T_8f97a_row5_col5 {
   background-color: #4eb1ff;
   color: #f1f1f1;
 }
 </style>
-<table id="T_70855">
+<table id="T_8f97a">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_70855_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_70855_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_70855_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_70855_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_70855_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_70855_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_8f97a_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_8f97a_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_8f97a_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_8f97a_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_8f97a_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_8f97a_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_70855_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_70855_row0_col0">0.683</td>
-<td class="data row0 col1" id="T_70855_row0_col1">0.690</td>
-<td class="data row0 col2" id="T_70855_row0_col2">0.688</td>
-<td class="data row0 col3" id="T_70855_row0_col3">0.674</td>
-<td class="data row0 col4" id="T_70855_row0_col4">0.685</td>
-<td class="data row0 col5" id="T_70855_row0_col5">0.684</td>
+<th class="row_heading level0 row0" id="T_8f97a_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_8f97a_row0_col0">0.683</td>
+<td class="data row0 col1" id="T_8f97a_row0_col1">0.690</td>
+<td class="data row0 col2" id="T_8f97a_row0_col2">0.688</td>
+<td class="data row0 col3" id="T_8f97a_row0_col3">0.674</td>
+<td class="data row0 col4" id="T_8f97a_row0_col4">0.685</td>
+<td class="data row0 col5" id="T_8f97a_row0_col5">0.684</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_70855_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_70855_row1_col0">0.698</td>
-<td class="data row1 col1" id="T_70855_row1_col1">0.691</td>
-<td class="data row1 col2" id="T_70855_row1_col2">0.680</td>
-<td class="data row1 col3" id="T_70855_row1_col3">0.684</td>
-<td class="data row1 col4" id="T_70855_row1_col4">0.700</td>
-<td class="data row1 col5" id="T_70855_row1_col5">0.691</td>
+<th class="row_heading level0 row1" id="T_8f97a_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_8f97a_row1_col0">0.698</td>
+<td class="data row1 col1" id="T_8f97a_row1_col1">0.691</td>
+<td class="data row1 col2" id="T_8f97a_row1_col2">0.680</td>
+<td class="data row1 col3" id="T_8f97a_row1_col3">0.684</td>
+<td class="data row1 col4" id="T_8f97a_row1_col4">0.700</td>
+<td class="data row1 col5" id="T_8f97a_row1_col5">0.691</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_70855_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_70855_row2_col0">0.677</td>
-<td class="data row2 col1" id="T_70855_row2_col1">0.648</td>
-<td class="data row2 col2" id="T_70855_row2_col2">0.660</td>
-<td class="data row2 col3" id="T_70855_row2_col3">0.684</td>
-<td class="data row2 col4" id="T_70855_row2_col4">0.664</td>
-<td class="data row2 col5" id="T_70855_row2_col5">0.667</td>
+<th class="row_heading level0 row2" id="T_8f97a_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_8f97a_row2_col0">0.677</td>
+<td class="data row2 col1" id="T_8f97a_row2_col1">0.648</td>
+<td class="data row2 col2" id="T_8f97a_row2_col2">0.660</td>
+<td class="data row2 col3" id="T_8f97a_row2_col3">0.684</td>
+<td class="data row2 col4" id="T_8f97a_row2_col4">0.664</td>
+<td class="data row2 col5" id="T_8f97a_row2_col5">0.667</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_70855_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_70855_row3_col0">0.689</td>
-<td class="data row3 col1" id="T_70855_row3_col1">0.681</td>
-<td class="data row3 col2" id="T_70855_row3_col2">0.680</td>
-<td class="data row3 col3" id="T_70855_row3_col3">0.673</td>
-<td class="data row3 col4" id="T_70855_row3_col4">0.682</td>
-<td class="data row3 col5" id="T_70855_row3_col5">0.681</td>
+<th class="row_heading level0 row3" id="T_8f97a_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_8f97a_row3_col0">0.689</td>
+<td class="data row3 col1" id="T_8f97a_row3_col1">0.681</td>
+<td class="data row3 col2" id="T_8f97a_row3_col2">0.680</td>
+<td class="data row3 col3" id="T_8f97a_row3_col3">0.673</td>
+<td class="data row3 col4" id="T_8f97a_row3_col4">0.682</td>
+<td class="data row3 col5" id="T_8f97a_row3_col5">0.681</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_70855_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_70855_row4_col0">0.659</td>
-<td class="data row4 col1" id="T_70855_row4_col1">0.674</td>
-<td class="data row4 col2" id="T_70855_row4_col2">0.664</td>
-<td class="data row4 col3" id="T_70855_row4_col3">0.668</td>
-<td class="data row4 col4" id="T_70855_row4_col4">0.686</td>
-<td class="data row4 col5" id="T_70855_row4_col5">0.670</td>
+<th class="row_heading level0 row4" id="T_8f97a_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_8f97a_row4_col0">0.659</td>
+<td class="data row4 col1" id="T_8f97a_row4_col1">0.674</td>
+<td class="data row4 col2" id="T_8f97a_row4_col2">0.664</td>
+<td class="data row4 col3" id="T_8f97a_row4_col3">0.668</td>
+<td class="data row4 col4" id="T_8f97a_row4_col4">0.686</td>
+<td class="data row4 col5" id="T_8f97a_row4_col5">0.670</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_70855_level0_row5">White</th>
-<td class="data row5 col0" id="T_70855_row5_col0">0.648</td>
-<td class="data row5 col1" id="T_70855_row5_col1">0.661</td>
-<td class="data row5 col2" id="T_70855_row5_col2">0.670</td>
-<td class="data row5 col3" id="T_70855_row5_col3">0.668</td>
-<td class="data row5 col4" id="T_70855_row5_col4">0.673</td>
-<td class="data row5 col5" id="T_70855_row5_col5">0.664</td>
+<th class="row_heading level0 row5" id="T_8f97a_level0_row5">White</th>
+<td class="data row5 col0" id="T_8f97a_row5_col0">0.648</td>
+<td class="data row5 col1" id="T_8f97a_row5_col1">0.661</td>
+<td class="data row5 col2" id="T_8f97a_row5_col2">0.670</td>
+<td class="data row5 col3" id="T_8f97a_row5_col3">0.668</td>
+<td class="data row5 col4" id="T_8f97a_row5_col4">0.673</td>
+<td class="data row5 col5" id="T_8f97a_row5_col5">0.664</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_70855_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_70855_foot0_row0_col0">0.676</td>
-<td class="foot0_data foot0_row0 col1" id="T_70855_foot0_row0_col1">0.674</td>
-<td class="foot0_data foot0_row0 col2" id="T_70855_foot0_row0_col2">0.674</td>
-<td class="foot0_data foot0_row0 col3" id="T_70855_foot0_row0_col3">0.675</td>
-<td class="foot0_data foot0_row0 col4" id="T_70855_foot0_row0_col4">0.682</td>
-<td class="foot0_data foot0_row0 col5" id="T_70855_foot0_row0_col5">0.676</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_8f97a_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_8f97a_foot0_row0_col0">0.676</td>
+<td class="foot0_data foot0_row0 col1" id="T_8f97a_foot0_row0_col1">0.674</td>
+<td class="foot0_data foot0_row0 col2" id="T_8f97a_foot0_row0_col2">0.674</td>
+<td class="foot0_data foot0_row0 col3" id="T_8f97a_foot0_row0_col3">0.675</td>
+<td class="foot0_data foot0_row0 col4" id="T_8f97a_foot0_row0_col4">0.682</td>
+<td class="foot0_data foot0_row0 col5" id="T_8f97a_foot0_row0_col5">0.676</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_70855_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_70855_foot0_row1_col0">0.017</td>
-<td class="foot0_data foot0_row1 col1" id="T_70855_foot0_row1_col1">0.015</td>
-<td class="foot0_data foot0_row1 col2" id="T_70855_foot0_row1_col2">0.010</td>
-<td class="foot0_data foot0_row1 col3" id="T_70855_foot0_row1_col3">0.007</td>
-<td class="foot0_data foot0_row1 col4" id="T_70855_foot0_row1_col4">0.011</td>
-<td class="foot0_data foot0_row1 col5" id="T_70855_foot0_row1_col5">0.012</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_8f97a_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_8f97a_foot0_row1_col0">0.017</td>
+<td class="foot0_data foot0_row1 col1" id="T_8f97a_foot0_row1_col1">0.015</td>
+<td class="foot0_data foot0_row1 col2" id="T_8f97a_foot0_row1_col2">0.010</td>
+<td class="foot0_data foot0_row1 col3" id="T_8f97a_foot0_row1_col3">0.007</td>
+<td class="foot0_data foot0_row1 col4" id="T_8f97a_foot0_row1_col4">0.011</td>
+<td class="foot0_data foot0_row1 col5" id="T_8f97a_foot0_row1_col5">0.012</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_70855_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_70855_foot0_row2_col0">0.659</td>
-<td class="foot0_data foot0_row2 col1" id="T_70855_foot0_row2_col1">0.659</td>
-<td class="foot0_data foot0_row2 col2" id="T_70855_foot0_row2_col2">0.664</td>
-<td class="foot0_data foot0_row2 col3" id="T_70855_foot0_row2_col3">0.668</td>
-<td class="foot0_data foot0_row2 col4" id="T_70855_foot0_row2_col4">0.671</td>
-<td class="foot0_data foot0_row2 col5" id="T_70855_foot0_row2_col5">0.664</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_8f97a_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_8f97a_foot0_row2_col0">0.659</td>
+<td class="foot0_data foot0_row2 col1" id="T_8f97a_foot0_row2_col1">0.659</td>
+<td class="foot0_data foot0_row2 col2" id="T_8f97a_foot0_row2_col2">0.664</td>
+<td class="foot0_data foot0_row2 col3" id="T_8f97a_foot0_row2_col3">0.668</td>
+<td class="foot0_data foot0_row2 col4" id="T_8f97a_foot0_row2_col4">0.671</td>
+<td class="foot0_data foot0_row2 col5" id="T_8f97a_foot0_row2_col5">0.664</td>
 </tr>
 </tbody>
 </table>
@@ -9656,7 +9656,7 @@ This model expects the lower and upper bounds for the target in the form of a tw
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [116]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [164]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %%time</span>
@@ -9701,236 +9701,236 @@ This model expects the lower and upper bounds for the target in the form of a tw
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_d01f6_row0_col0, #T_d01f6_row0_col5 {
+#T_d76ee_row0_col0, #T_d76ee_row0_col5 {
   background-color: #bb44ff;
   color: #f1f1f1;
 }
-#T_d01f6_row0_col1, #T_d01f6_row1_col4 {
+#T_d76ee_row0_col1, #T_d76ee_row1_col4 {
   background-color: #fb04ff;
   color: #f1f1f1;
 }
-#T_d01f6_row0_col2 {
+#T_d76ee_row0_col2 {
   background-color: #c639ff;
   color: #f1f1f1;
 }
-#T_d01f6_row0_col3 {
+#T_d76ee_row0_col3 {
   background-color: #827dff;
   color: #f1f1f1;
 }
-#T_d01f6_row0_col4 {
+#T_d76ee_row0_col4 {
   background-color: #a956ff;
   color: #f1f1f1;
 }
-#T_d01f6_row1_col0 {
+#T_d76ee_row1_col0 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_d01f6_row1_col1 {
+#T_d76ee_row1_col1 {
   background-color: #db24ff;
   color: #f1f1f1;
 }
-#T_d01f6_row1_col2 {
+#T_d76ee_row1_col2 {
   background-color: #a35cff;
   color: #f1f1f1;
 }
-#T_d01f6_row1_col3 {
+#T_d76ee_row1_col3 {
   background-color: #b34cff;
   color: #f1f1f1;
 }
-#T_d01f6_row1_col5 {
+#T_d76ee_row1_col5 {
   background-color: #d52aff;
   color: #f1f1f1;
 }
-#T_d01f6_row2_col0 {
+#T_d76ee_row2_col0 {
   background-color: #847bff;
   color: #f1f1f1;
 }
-#T_d01f6_row2_col1 {
+#T_d76ee_row2_col1 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_d01f6_row2_col2 {
+#T_d76ee_row2_col2 {
   background-color: #40bfff;
   color: #000000;
 }
-#T_d01f6_row2_col3 {
+#T_d76ee_row2_col3 {
   background-color: #837cff;
   color: #f1f1f1;
 }
-#T_d01f6_row2_col4 {
+#T_d76ee_row2_col4 {
   background-color: #4cb3ff;
   color: #000000;
 }
-#T_d01f6_row2_col5 {
+#T_d76ee_row2_col5 {
   background-color: #50afff;
   color: #f1f1f1;
 }
-#T_d01f6_row3_col0 {
+#T_d76ee_row3_col0 {
   background-color: #e01fff;
   color: #f1f1f1;
 }
-#T_d01f6_row3_col1 {
+#T_d76ee_row3_col1 {
   background-color: #946bff;
   color: #f1f1f1;
 }
-#T_d01f6_row3_col2 {
+#T_d76ee_row3_col2 {
   background-color: #9e61ff;
   color: #f1f1f1;
 }
-#T_d01f6_row3_col3 {
+#T_d76ee_row3_col3 {
   background-color: #748bff;
   color: #f1f1f1;
 }
-#T_d01f6_row3_col4 {
+#T_d76ee_row3_col4 {
   background-color: #9a65ff;
   color: #f1f1f1;
 }
-#T_d01f6_row3_col5 {
+#T_d76ee_row3_col5 {
   background-color: #a05fff;
   color: #f1f1f1;
 }
-#T_d01f6_row4_col0 {
+#T_d76ee_row4_col0 {
   background-color: #48b7ff;
   color: #000000;
 }
-#T_d01f6_row4_col1 {
+#T_d76ee_row4_col1 {
   background-color: #9867ff;
   color: #f1f1f1;
 }
-#T_d01f6_row4_col2 {
+#T_d76ee_row4_col2 {
   background-color: #37c8ff;
   color: #000000;
 }
-#T_d01f6_row4_col3 {
+#T_d76ee_row4_col3 {
   background-color: #54abff;
   color: #f1f1f1;
 }
-#T_d01f6_row4_col4 {
+#T_d76ee_row4_col4 {
   background-color: #d22dff;
   color: #f1f1f1;
 }
-#T_d01f6_row4_col5 {
+#T_d76ee_row4_col5 {
   background-color: #728dff;
   color: #f1f1f1;
 }
-#T_d01f6_row5_col0 {
+#T_d76ee_row5_col0 {
   background-color: #03fcff;
   color: #000000;
 }
-#T_d01f6_row5_col1 {
+#T_d76ee_row5_col1 {
   background-color: #14ebff;
   color: #000000;
 }
-#T_d01f6_row5_col2 {
+#T_d76ee_row5_col2 {
   background-color: #609fff;
   color: #f1f1f1;
 }
-#T_d01f6_row5_col3 {
+#T_d76ee_row5_col3 {
   background-color: #33ccff;
   color: #000000;
 }
-#T_d01f6_row5_col4 {
+#T_d76ee_row5_col4 {
   background-color: #708fff;
   color: #f1f1f1;
 }
-#T_d01f6_row5_col5 {
+#T_d76ee_row5_col5 {
   background-color: #38c7ff;
   color: #000000;
 }
 </style>
-<table id="T_d01f6">
+<table id="T_d76ee">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_d01f6_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_d01f6_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_d01f6_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_d01f6_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_d01f6_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_d01f6_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_d76ee_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_d76ee_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_d76ee_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_d76ee_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_d76ee_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_d76ee_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_d01f6_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_d01f6_row0_col0">0.686</td>
-<td class="data row0 col1" id="T_d01f6_row0_col1">0.698</td>
-<td class="data row0 col2" id="T_d01f6_row0_col2">0.688</td>
-<td class="data row0 col3" id="T_d01f6_row0_col3">0.676</td>
-<td class="data row0 col4" id="T_d01f6_row0_col4">0.683</td>
-<td class="data row0 col5" id="T_d01f6_row0_col5">0.686</td>
+<th class="row_heading level0 row0" id="T_d76ee_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_d76ee_row0_col0">0.686</td>
+<td class="data row0 col1" id="T_d76ee_row0_col1">0.698</td>
+<td class="data row0 col2" id="T_d76ee_row0_col2">0.688</td>
+<td class="data row0 col3" id="T_d76ee_row0_col3">0.676</td>
+<td class="data row0 col4" id="T_d76ee_row0_col4">0.683</td>
+<td class="data row0 col5" id="T_d76ee_row0_col5">0.686</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_d01f6_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_d01f6_row1_col0">0.699</td>
-<td class="data row1 col1" id="T_d01f6_row1_col1">0.692</td>
-<td class="data row1 col2" id="T_d01f6_row1_col2">0.682</td>
-<td class="data row1 col3" id="T_d01f6_row1_col3">0.685</td>
-<td class="data row1 col4" id="T_d01f6_row1_col4">0.698</td>
-<td class="data row1 col5" id="T_d01f6_row1_col5">0.691</td>
+<th class="row_heading level0 row1" id="T_d76ee_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_d76ee_row1_col0">0.699</td>
+<td class="data row1 col1" id="T_d76ee_row1_col1">0.692</td>
+<td class="data row1 col2" id="T_d76ee_row1_col2">0.682</td>
+<td class="data row1 col3" id="T_d76ee_row1_col3">0.685</td>
+<td class="data row1 col4" id="T_d76ee_row1_col4">0.698</td>
+<td class="data row1 col5" id="T_d76ee_row1_col5">0.691</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_d01f6_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_d01f6_row2_col0">0.676</td>
-<td class="data row2 col1" id="T_d01f6_row2_col1">0.651</td>
-<td class="data row2 col2" id="T_d01f6_row2_col2">0.663</td>
-<td class="data row2 col3" id="T_d01f6_row2_col3">0.676</td>
-<td class="data row2 col4" id="T_d01f6_row2_col4">0.665</td>
-<td class="data row2 col5" id="T_d01f6_row2_col5">0.666</td>
+<th class="row_heading level0 row2" id="T_d76ee_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_d76ee_row2_col0">0.676</td>
+<td class="data row2 col1" id="T_d76ee_row2_col1">0.651</td>
+<td class="data row2 col2" id="T_d76ee_row2_col2">0.663</td>
+<td class="data row2 col3" id="T_d76ee_row2_col3">0.676</td>
+<td class="data row2 col4" id="T_d76ee_row2_col4">0.665</td>
+<td class="data row2 col5" id="T_d76ee_row2_col5">0.666</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_d01f6_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_d01f6_row3_col0">0.693</td>
-<td class="data row3 col1" id="T_d01f6_row3_col1">0.679</td>
-<td class="data row3 col2" id="T_d01f6_row3_col2">0.681</td>
-<td class="data row3 col3" id="T_d01f6_row3_col3">0.673</td>
-<td class="data row3 col4" id="T_d01f6_row3_col4">0.680</td>
-<td class="data row3 col5" id="T_d01f6_row3_col5">0.681</td>
+<th class="row_heading level0 row3" id="T_d76ee_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_d76ee_row3_col0">0.693</td>
+<td class="data row3 col1" id="T_d76ee_row3_col1">0.679</td>
+<td class="data row3 col2" id="T_d76ee_row3_col2">0.681</td>
+<td class="data row3 col3" id="T_d76ee_row3_col3">0.673</td>
+<td class="data row3 col4" id="T_d76ee_row3_col4">0.680</td>
+<td class="data row3 col5" id="T_d76ee_row3_col5">0.681</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_d01f6_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_d01f6_row4_col0">0.665</td>
-<td class="data row4 col1" id="T_d01f6_row4_col1">0.680</td>
-<td class="data row4 col2" id="T_d01f6_row4_col2">0.662</td>
-<td class="data row4 col3" id="T_d01f6_row4_col3">0.667</td>
-<td class="data row4 col4" id="T_d01f6_row4_col4">0.690</td>
-<td class="data row4 col5" id="T_d01f6_row4_col5">0.673</td>
+<th class="row_heading level0 row4" id="T_d76ee_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_d76ee_row4_col0">0.665</td>
+<td class="data row4 col1" id="T_d76ee_row4_col1">0.680</td>
+<td class="data row4 col2" id="T_d76ee_row4_col2">0.662</td>
+<td class="data row4 col3" id="T_d76ee_row4_col3">0.667</td>
+<td class="data row4 col4" id="T_d76ee_row4_col4">0.690</td>
+<td class="data row4 col5" id="T_d76ee_row4_col5">0.673</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_d01f6_level0_row5">White</th>
-<td class="data row5 col0" id="T_d01f6_row5_col0">0.652</td>
-<td class="data row5 col1" id="T_d01f6_row5_col1">0.655</td>
-<td class="data row5 col2" id="T_d01f6_row5_col2">0.669</td>
-<td class="data row5 col3" id="T_d01f6_row5_col3">0.661</td>
-<td class="data row5 col4" id="T_d01f6_row5_col4">0.672</td>
-<td class="data row5 col5" id="T_d01f6_row5_col5">0.662</td>
+<th class="row_heading level0 row5" id="T_d76ee_level0_row5">White</th>
+<td class="data row5 col0" id="T_d76ee_row5_col0">0.652</td>
+<td class="data row5 col1" id="T_d76ee_row5_col1">0.655</td>
+<td class="data row5 col2" id="T_d76ee_row5_col2">0.669</td>
+<td class="data row5 col3" id="T_d76ee_row5_col3">0.661</td>
+<td class="data row5 col4" id="T_d76ee_row5_col4">0.672</td>
+<td class="data row5 col5" id="T_d76ee_row5_col5">0.662</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_d01f6_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_d01f6_foot0_row0_col0">0.678</td>
-<td class="foot0_data foot0_row0 col1" id="T_d01f6_foot0_row0_col1">0.676</td>
-<td class="foot0_data foot0_row0 col2" id="T_d01f6_foot0_row0_col2">0.674</td>
-<td class="foot0_data foot0_row0 col3" id="T_d01f6_foot0_row0_col3">0.673</td>
-<td class="foot0_data foot0_row0 col4" id="T_d01f6_foot0_row0_col4">0.682</td>
-<td class="foot0_data foot0_row0 col5" id="T_d01f6_foot0_row0_col5">0.677</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_d76ee_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_d76ee_foot0_row0_col0">0.678</td>
+<td class="foot0_data foot0_row0 col1" id="T_d76ee_foot0_row0_col1">0.676</td>
+<td class="foot0_data foot0_row0 col2" id="T_d76ee_foot0_row0_col2">0.674</td>
+<td class="foot0_data foot0_row0 col3" id="T_d76ee_foot0_row0_col3">0.673</td>
+<td class="foot0_data foot0_row0 col4" id="T_d76ee_foot0_row0_col4">0.682</td>
+<td class="foot0_data foot0_row0 col5" id="T_d76ee_foot0_row0_col5">0.677</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_d01f6_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_d01f6_foot0_row1_col0">0.016</td>
-<td class="foot0_data foot0_row1 col1" id="T_d01f6_foot0_row1_col1">0.017</td>
-<td class="foot0_data foot0_row1 col2" id="T_d01f6_foot0_row1_col2">0.010</td>
-<td class="foot0_data foot0_row1 col3" id="T_d01f6_foot0_row1_col3">0.007</td>
-<td class="foot0_data foot0_row1 col4" id="T_d01f6_foot0_row1_col4">0.011</td>
-<td class="foot0_data foot0_row1 col5" id="T_d01f6_foot0_row1_col5">0.012</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_d76ee_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_d76ee_foot0_row1_col0">0.016</td>
+<td class="foot0_data foot0_row1 col1" id="T_d76ee_foot0_row1_col1">0.017</td>
+<td class="foot0_data foot0_row1 col2" id="T_d76ee_foot0_row1_col2">0.010</td>
+<td class="foot0_data foot0_row1 col3" id="T_d76ee_foot0_row1_col3">0.007</td>
+<td class="foot0_data foot0_row1 col4" id="T_d76ee_foot0_row1_col4">0.011</td>
+<td class="foot0_data foot0_row1 col5" id="T_d76ee_foot0_row1_col5">0.012</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_d01f6_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_d01f6_foot0_row2_col0">0.662</td>
-<td class="foot0_data foot0_row2 col1" id="T_d01f6_foot0_row2_col1">0.658</td>
-<td class="foot0_data foot0_row2 col2" id="T_d01f6_foot0_row2_col2">0.664</td>
-<td class="foot0_data foot0_row2 col3" id="T_d01f6_foot0_row2_col3">0.665</td>
-<td class="foot0_data foot0_row2 col4" id="T_d01f6_foot0_row2_col4">0.671</td>
-<td class="foot0_data foot0_row2 col5" id="T_d01f6_foot0_row2_col5">0.664</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_d76ee_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_d76ee_foot0_row2_col0">0.662</td>
+<td class="foot0_data foot0_row2 col1" id="T_d76ee_foot0_row2_col1">0.658</td>
+<td class="foot0_data foot0_row2 col2" id="T_d76ee_foot0_row2_col2">0.664</td>
+<td class="foot0_data foot0_row2 col3" id="T_d76ee_foot0_row2_col3">0.665</td>
+<td class="foot0_data foot0_row2 col4" id="T_d76ee_foot0_row2_col4">0.671</td>
+<td class="foot0_data foot0_row2 col5" id="T_d76ee_foot0_row2_col5">0.664</td>
 </tr>
 </tbody>
 </table>
@@ -9947,7 +9947,7 @@ This model expects the lower and upper bounds for the target in the form of a tw
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Target-transformation-models-and-regression-with-mean-squared-error">Target transformation models and regression with mean squared error<a class="anchor-link" href="#Target-transformation-models-and-regression-with-mean-squared-error">¶</a></h1><p>The competition task can be interpreted as predicting the order of events for the patients.<br/>
 Who has an event first? Who second? ... Who has an event last? and who survives without an event at all?<br/>
-With a suitable target transformation, we can apply the usual regression algorithms which optimize mse or similar metrics.</p>
+With a suitable target transformation, we can apply the usual regression algorithms which optimize MSE or similar metrics.</p>
 </div>
 </div>
 </div>
@@ -9962,7 +9962,37 @@ With a suitable target transformation, we can apply the usual regression algorit
 This distribution is problematic for regression models.<br/>
 We want predictions to have high discriminative power for the patients who have a known event, but we don't need to distinguish between unkowns.<br/>
 We can achieve this result by stretching the range of the patients with a known event and compressing the range of the unkowns.</p>
-<p>The diagram shows how a typical target transformation stretches and compresses the ranges:</p>
+<p>Let's create such a transformation to use for our model:</p>
+</div>
+</div>
+</div>
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=37fa4944">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In [165]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+<div class="cm-editor cm-s-jupyter">
+<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">transform_survival_probability</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Transform the target by stretching the range of eventful efs_times and compressing the range of event_free efs_times"""</span>
+    <span class="n">kmf</span> <span class="o">=</span> <span class="n">KaplanMeierFitter</span><span class="p">()</span>
+    <span class="n">kmf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">kmf</span><span class="o">.</span><span class="n">survival_function_at_times</span><span class="p">(</span><span class="n">time</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0a4e6e76">
+<div class="jp-Cell-inputWrapper" tabindex="0">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p>The next diagram shows how a typical target transformation stretches and compresses the ranges.<br/>
+We use the transformation above as the example:</p>
 </div>
 </div>
 </div>
@@ -9971,17 +10001,10 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [117]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [166]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">transform_survival_probability</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">"""Transform the target by stretching the range of eventful efs_times and compressing the range of event_free efs_times"""</span>
-    <span class="n">kmf</span> <span class="o">=</span> <span class="n">KaplanMeierFitter</span><span class="p">()</span>
-    <span class="n">kmf</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">)</span>
-    <span class="n">y</span> <span class="o">=</span> <span class="n">kmf</span><span class="o">.</span><span class="n">survival_function_at_times</span><span class="p">(</span><span class="n">time</span><span class="p">)</span><span class="o">.</span><span class="n">values</span>
-    <span class="k">return</span> <span class="n">y</span>
-
-<span class="n">y_quantile</span> <span class="o">=</span> <span class="n">transform_survival_probability</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="n">train</span><span class="o">.</span><span class="n">efs_time</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="n">train</span><span class="o">.</span><span class="n">efs</span><span class="p">)</span>
+<div class="highlight hl-ipython3"><pre><span></span><span class="n">y_quantile</span> <span class="o">=</span> <span class="n">transform_survival_probability</span><span class="p">(</span><span class="n">time</span><span class="o">=</span><span class="n">train</span><span class="o">.</span><span class="n">efs_time</span><span class="p">,</span> <span class="n">event</span><span class="o">=</span><span class="n">train</span><span class="o">.</span><span class="n">efs</span><span class="p">)</span>
 <span class="n">survival_df</span> <span class="o">=</span> <span class="n">survival_function</span><span class="p">(</span><span class="n">train</span><span class="p">)</span>
 
 <span class="n">fig</span><span class="p">,</span> <span class="n">axs</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">),</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">80</span><span class="p">)</span>
@@ -10048,7 +10071,7 @@ We can achieve this result by stretching the range of the patients with a known 
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>We will add 4 more possible target transformations to test.</p>
+<p>We will add 4 more possible target transformations to test:</p>
 </div>
 </div>
 </div>
@@ -10057,7 +10080,7 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [118]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [167]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span><span class="w"> </span><span class="nf">transform_partial_hazard</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
@@ -10072,8 +10095,8 @@ We can achieve this result by stretching the range of the patients with a known 
 <span class="k">def</span><span class="w"> </span><span class="nf">transform_separate</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Transform the target by separating events from non-events"""</span>
     <span class="n">transformed</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    <span class="n">mx</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="c1"># last patient who dies</span>
-    <span class="n">mn</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="c1"># first patient who survives</span>
+    <span class="n">mx</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="c1"># last patient that has a known event</span>
+    <span class="n">mn</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="c1"># first patient that does not have a known event</span>
     <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">time</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">mx</span> <span class="o">-</span> <span class="n">mn</span>
     <span class="n">transformed</span> <span class="o">=</span> <span class="n">rankdata</span><span class="p">(</span><span class="n">transformed</span><span class="p">)</span>
     <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">transformed</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
@@ -10083,8 +10106,8 @@ We can achieve this result by stretching the range of the patients with a known 
 <span class="k">def</span><span class="w"> </span><span class="nf">transform_rank_log</span><span class="p">(</span><span class="n">time</span><span class="p">,</span> <span class="n">event</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">"""Transform the target by stretching the range of eventful efs_times and compressing the range of event_free efs_times"""</span>
     <span class="n">transformed</span> <span class="o">=</span> <span class="n">time</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">copy</span><span class="p">()</span>
-    <span class="n">mx</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="c1"># last patient who dies</span>
-    <span class="n">mn</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="c1"># first patient who survives</span>
+    <span class="n">mx</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">max</span><span class="p">()</span> <span class="c1"># last patient that has a known event</span>
+    <span class="n">mn</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">min</span><span class="p">()</span> <span class="c1"># first patient that does not have a known event</span>
     <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">time</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="n">mx</span> <span class="o">-</span> <span class="n">mn</span>
     <span class="n">transformed</span> <span class="o">=</span> <span class="n">rankdata</span><span class="p">(</span><span class="n">transformed</span><span class="p">)</span>
     <span class="n">transformed</span><span class="p">[</span><span class="n">event</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span> <span class="o">+=</span> <span class="nb">len</span><span class="p">(</span><span class="n">transformed</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span>
@@ -10120,7 +10143,7 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [119]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [168]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">transformation</span> <span class="ow">in</span> <span class="p">[</span><span class="n">transform_survival_probability</span><span class="p">,</span>
@@ -10193,236 +10216,236 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_d0a8e_row0_col0 {
+#T_d783b_row0_col0 {
   background-color: #7f80ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row0_col1 {
+#T_d783b_row0_col1 {
   background-color: #9f60ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row0_col2 {
+#T_d783b_row0_col2 {
   background-color: #d02fff;
   color: #f1f1f1;
 }
-#T_d0a8e_row0_col3, #T_d0a8e_row4_col1 {
+#T_d783b_row0_col3, #T_d783b_row4_col1 {
   background-color: #56a9ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row0_col4 {
+#T_d783b_row0_col4 {
   background-color: #926dff;
   color: #f1f1f1;
 }
-#T_d0a8e_row0_col5, #T_d0a8e_row3_col2 {
+#T_d783b_row0_col5, #T_d783b_row3_col2 {
   background-color: #916eff;
   color: #f1f1f1;
 }
-#T_d0a8e_row1_col0 {
+#T_d783b_row1_col0 {
   background-color: #fb04ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row1_col1 {
+#T_d783b_row1_col1 {
   background-color: #946bff;
   color: #f1f1f1;
 }
-#T_d0a8e_row1_col2 {
+#T_d783b_row1_col2 {
   background-color: #c43bff;
   color: #f1f1f1;
 }
-#T_d0a8e_row1_col3 {
+#T_d783b_row1_col3 {
   background-color: #ce31ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row1_col4 {
+#T_d783b_row1_col4 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row1_col5 {
+#T_d783b_row1_col5 {
   background-color: #d42bff;
   color: #f1f1f1;
 }
-#T_d0a8e_row2_col0 {
+#T_d783b_row2_col0 {
   background-color: #9c63ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row2_col1 {
+#T_d783b_row2_col1 {
   background-color: #05faff;
   color: #000000;
 }
-#T_d0a8e_row2_col2 {
+#T_d783b_row2_col2 {
   background-color: #18e7ff;
   color: #000000;
 }
-#T_d0a8e_row2_col3 {
+#T_d783b_row2_col3 {
   background-color: #d926ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row2_col4 {
+#T_d783b_row2_col4 {
   background-color: #48b7ff;
   color: #000000;
 }
-#T_d0a8e_row2_col5 {
+#T_d783b_row2_col5 {
   background-color: #5fa0ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row3_col0 {
+#T_d783b_row3_col0 {
   background-color: #9867ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row3_col1 {
+#T_d783b_row3_col1 {
   background-color: #aa55ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row3_col3 {
+#T_d783b_row3_col3 {
   background-color: #47b8ff;
   color: #000000;
 }
-#T_d0a8e_row3_col4 {
+#T_d783b_row3_col4 {
   background-color: #8e71ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row3_col5 {
+#T_d783b_row3_col5 {
   background-color: #8877ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row4_col0 {
+#T_d783b_row4_col0 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_d0a8e_row4_col2 {
+#T_d783b_row4_col2 {
   background-color: #53acff;
   color: #f1f1f1;
 }
-#T_d0a8e_row4_col3 {
+#T_d783b_row4_col3 {
   background-color: #4bb4ff;
   color: #000000;
 }
-#T_d0a8e_row4_col4 {
+#T_d783b_row4_col4 {
   background-color: #a758ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row4_col5 {
+#T_d783b_row4_col5 {
   background-color: #52adff;
   color: #f1f1f1;
 }
-#T_d0a8e_row5_col0 {
+#T_d783b_row5_col0 {
   background-color: #43bcff;
   color: #000000;
 }
-#T_d0a8e_row5_col1 {
+#T_d783b_row5_col1 {
   background-color: #1de2ff;
   color: #000000;
 }
-#T_d0a8e_row5_col2 {
+#T_d783b_row5_col2 {
   background-color: #619eff;
   color: #f1f1f1;
 }
-#T_d0a8e_row5_col3 {
+#T_d783b_row5_col3 {
   background-color: #8976ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row5_col4 {
+#T_d783b_row5_col4 {
   background-color: #ad52ff;
   color: #f1f1f1;
 }
-#T_d0a8e_row5_col5 {
+#T_d783b_row5_col5 {
   background-color: #659aff;
   color: #f1f1f1;
 }
 </style>
-<table id="T_d0a8e">
+<table id="T_d783b">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_d0a8e_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_d0a8e_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_d0a8e_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_d0a8e_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_d0a8e_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_d0a8e_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_d783b_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_d783b_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_d783b_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_d783b_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_d783b_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_d783b_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_d0a8e_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_d0a8e_row0_col0">0.680</td>
-<td class="data row0 col1" id="T_d0a8e_row0_col1">0.685</td>
-<td class="data row0 col2" id="T_d0a8e_row0_col2">0.693</td>
-<td class="data row0 col3" id="T_d0a8e_row0_col3">0.673</td>
-<td class="data row0 col4" id="T_d0a8e_row0_col4">0.683</td>
-<td class="data row0 col5" id="T_d0a8e_row0_col5">0.683</td>
+<th class="row_heading level0 row0" id="T_d783b_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_d783b_row0_col0">0.680</td>
+<td class="data row0 col1" id="T_d783b_row0_col1">0.685</td>
+<td class="data row0 col2" id="T_d783b_row0_col2">0.693</td>
+<td class="data row0 col3" id="T_d783b_row0_col3">0.673</td>
+<td class="data row0 col4" id="T_d783b_row0_col4">0.683</td>
+<td class="data row0 col5" id="T_d783b_row0_col5">0.683</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_d0a8e_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_d0a8e_row1_col0">0.701</td>
-<td class="data row1 col1" id="T_d0a8e_row1_col1">0.684</td>
-<td class="data row1 col2" id="T_d0a8e_row1_col2">0.691</td>
-<td class="data row1 col3" id="T_d0a8e_row1_col3">0.693</td>
-<td class="data row1 col4" id="T_d0a8e_row1_col4">0.701</td>
-<td class="data row1 col5" id="T_d0a8e_row1_col5">0.694</td>
+<th class="row_heading level0 row1" id="T_d783b_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_d783b_row1_col0">0.701</td>
+<td class="data row1 col1" id="T_d783b_row1_col1">0.684</td>
+<td class="data row1 col2" id="T_d783b_row1_col2">0.691</td>
+<td class="data row1 col3" id="T_d783b_row1_col3">0.693</td>
+<td class="data row1 col4" id="T_d783b_row1_col4">0.701</td>
+<td class="data row1 col5" id="T_d783b_row1_col5">0.694</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_d0a8e_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_d0a8e_row2_col0">0.685</td>
-<td class="data row2 col1" id="T_d0a8e_row2_col1">0.660</td>
-<td class="data row2 col2" id="T_d0a8e_row2_col2">0.663</td>
-<td class="data row2 col3" id="T_d0a8e_row2_col3">0.695</td>
-<td class="data row2 col4" id="T_d0a8e_row2_col4">0.671</td>
-<td class="data row2 col5" id="T_d0a8e_row2_col5">0.675</td>
+<th class="row_heading level0 row2" id="T_d783b_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_d783b_row2_col0">0.685</td>
+<td class="data row2 col1" id="T_d783b_row2_col1">0.660</td>
+<td class="data row2 col2" id="T_d783b_row2_col2">0.663</td>
+<td class="data row2 col3" id="T_d783b_row2_col3">0.695</td>
+<td class="data row2 col4" id="T_d783b_row2_col4">0.671</td>
+<td class="data row2 col5" id="T_d783b_row2_col5">0.675</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_d0a8e_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_d0a8e_row3_col0">0.684</td>
-<td class="data row3 col1" id="T_d0a8e_row3_col1">0.687</td>
-<td class="data row3 col2" id="T_d0a8e_row3_col2">0.683</td>
-<td class="data row3 col3" id="T_d0a8e_row3_col3">0.671</td>
-<td class="data row3 col4" id="T_d0a8e_row3_col4">0.682</td>
-<td class="data row3 col5" id="T_d0a8e_row3_col5">0.681</td>
+<th class="row_heading level0 row3" id="T_d783b_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_d783b_row3_col0">0.684</td>
+<td class="data row3 col1" id="T_d783b_row3_col1">0.687</td>
+<td class="data row3 col2" id="T_d783b_row3_col2">0.683</td>
+<td class="data row3 col3" id="T_d783b_row3_col3">0.671</td>
+<td class="data row3 col4" id="T_d783b_row3_col4">0.682</td>
+<td class="data row3 col5" id="T_d783b_row3_col5">0.681</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_d0a8e_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_d0a8e_row4_col0">0.659</td>
-<td class="data row4 col1" id="T_d0a8e_row4_col1">0.673</td>
-<td class="data row4 col2" id="T_d0a8e_row4_col2">0.673</td>
-<td class="data row4 col3" id="T_d0a8e_row4_col3">0.671</td>
-<td class="data row4 col4" id="T_d0a8e_row4_col4">0.687</td>
-<td class="data row4 col5" id="T_d0a8e_row4_col5">0.673</td>
+<th class="row_heading level0 row4" id="T_d783b_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_d783b_row4_col0">0.659</td>
+<td class="data row4 col1" id="T_d783b_row4_col1">0.673</td>
+<td class="data row4 col2" id="T_d783b_row4_col2">0.673</td>
+<td class="data row4 col3" id="T_d783b_row4_col3">0.671</td>
+<td class="data row4 col4" id="T_d783b_row4_col4">0.687</td>
+<td class="data row4 col5" id="T_d783b_row4_col5">0.673</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_d0a8e_level0_row5">White</th>
-<td class="data row5 col0" id="T_d0a8e_row5_col0">0.670</td>
-<td class="data row5 col1" id="T_d0a8e_row5_col1">0.664</td>
-<td class="data row5 col2" id="T_d0a8e_row5_col2">0.675</td>
-<td class="data row5 col3" id="T_d0a8e_row5_col3">0.682</td>
-<td class="data row5 col4" id="T_d0a8e_row5_col4">0.688</td>
-<td class="data row5 col5" id="T_d0a8e_row5_col5">0.676</td>
+<th class="row_heading level0 row5" id="T_d783b_level0_row5">White</th>
+<td class="data row5 col0" id="T_d783b_row5_col0">0.670</td>
+<td class="data row5 col1" id="T_d783b_row5_col1">0.664</td>
+<td class="data row5 col2" id="T_d783b_row5_col2">0.675</td>
+<td class="data row5 col3" id="T_d783b_row5_col3">0.682</td>
+<td class="data row5 col4" id="T_d783b_row5_col4">0.688</td>
+<td class="data row5 col5" id="T_d783b_row5_col5">0.676</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_d0a8e_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_d0a8e_foot0_row0_col0">0.680</td>
-<td class="foot0_data foot0_row0 col1" id="T_d0a8e_foot0_row0_col1">0.675</td>
-<td class="foot0_data foot0_row0 col2" id="T_d0a8e_foot0_row0_col2">0.680</td>
-<td class="foot0_data foot0_row0 col3" id="T_d0a8e_foot0_row0_col3">0.681</td>
-<td class="foot0_data foot0_row0 col4" id="T_d0a8e_foot0_row0_col4">0.685</td>
-<td class="foot0_data foot0_row0 col5" id="T_d0a8e_foot0_row0_col5">0.680</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_d783b_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_d783b_foot0_row0_col0">0.680</td>
+<td class="foot0_data foot0_row0 col1" id="T_d783b_foot0_row0_col1">0.675</td>
+<td class="foot0_data foot0_row0 col2" id="T_d783b_foot0_row0_col2">0.680</td>
+<td class="foot0_data foot0_row0 col3" id="T_d783b_foot0_row0_col3">0.681</td>
+<td class="foot0_data foot0_row0 col4" id="T_d783b_foot0_row0_col4">0.685</td>
+<td class="foot0_data foot0_row0 col5" id="T_d783b_foot0_row0_col5">0.680</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_d0a8e_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_d0a8e_foot0_row1_col0">0.013</td>
-<td class="foot0_data foot0_row1 col1" id="T_d0a8e_foot0_row1_col1">0.011</td>
-<td class="foot0_data foot0_row1 col2" id="T_d0a8e_foot0_row1_col2">0.011</td>
-<td class="foot0_data foot0_row1 col3" id="T_d0a8e_foot0_row1_col3">0.010</td>
-<td class="foot0_data foot0_row1 col4" id="T_d0a8e_foot0_row1_col4">0.009</td>
-<td class="foot0_data foot0_row1 col5" id="T_d0a8e_foot0_row1_col5">0.011</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_d783b_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_d783b_foot0_row1_col0">0.013</td>
+<td class="foot0_data foot0_row1 col1" id="T_d783b_foot0_row1_col1">0.011</td>
+<td class="foot0_data foot0_row1 col2" id="T_d783b_foot0_row1_col2">0.011</td>
+<td class="foot0_data foot0_row1 col3" id="T_d783b_foot0_row1_col3">0.010</td>
+<td class="foot0_data foot0_row1 col4" id="T_d783b_foot0_row1_col4">0.009</td>
+<td class="foot0_data foot0_row1 col5" id="T_d783b_foot0_row1_col5">0.011</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_d0a8e_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_d0a8e_foot0_row2_col0">0.667</td>
-<td class="foot0_data foot0_row2 col1" id="T_d0a8e_foot0_row2_col1">0.665</td>
-<td class="foot0_data foot0_row2 col2" id="T_d0a8e_foot0_row2_col2">0.669</td>
-<td class="foot0_data foot0_row2 col3" id="T_d0a8e_foot0_row2_col3">0.671</td>
-<td class="foot0_data foot0_row2 col4" id="T_d0a8e_foot0_row2_col4">0.676</td>
-<td class="foot0_data foot0_row2 col5" id="T_d0a8e_foot0_row2_col5">0.670</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_d783b_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_d783b_foot0_row2_col0">0.667</td>
+<td class="foot0_data foot0_row2 col1" id="T_d783b_foot0_row2_col1">0.665</td>
+<td class="foot0_data foot0_row2 col2" id="T_d783b_foot0_row2_col2">0.669</td>
+<td class="foot0_data foot0_row2 col3" id="T_d783b_foot0_row2_col3">0.671</td>
+<td class="foot0_data foot0_row2 col4" id="T_d783b_foot0_row2_col4">0.676</td>
+<td class="foot0_data foot0_row2 col5" id="T_d783b_foot0_row2_col5">0.670</td>
 </tr>
 </tbody>
 </table>
@@ -10458,228 +10481,228 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_e7971_row0_col0 {
+#T_67e90_row0_col0 {
   background-color: #728dff;
   color: #f1f1f1;
 }
-#T_e7971_row0_col1 {
+#T_67e90_row0_col1 {
   background-color: #9768ff;
   color: #f1f1f1;
 }
-#T_e7971_row0_col2, #T_e7971_row1_col5, #T_e7971_row2_col3 {
+#T_67e90_row0_col2, #T_67e90_row1_col5, #T_67e90_row2_col3 {
   background-color: #da25ff;
   color: #f1f1f1;
 }
-#T_e7971_row0_col3 {
+#T_67e90_row0_col3 {
   background-color: #6a95ff;
   color: #f1f1f1;
 }
-#T_e7971_row0_col4 {
+#T_67e90_row0_col4 {
   background-color: #8a75ff;
   color: #f1f1f1;
 }
-#T_e7971_row0_col5 {
+#T_67e90_row0_col5 {
   background-color: #916eff;
   color: #f1f1f1;
 }
-#T_e7971_row1_col0 {
+#T_67e90_row1_col0 {
   background-color: #fa05ff;
   color: #f1f1f1;
 }
-#T_e7971_row1_col1, #T_e7971_row3_col0 {
+#T_67e90_row1_col1, #T_67e90_row3_col0 {
   background-color: #9a65ff;
   color: #f1f1f1;
 }
-#T_e7971_row1_col2 {
+#T_67e90_row1_col2 {
   background-color: #b847ff;
   color: #f1f1f1;
 }
-#T_e7971_row1_col3 {
+#T_67e90_row1_col3 {
   background-color: #f40bff;
   color: #f1f1f1;
 }
-#T_e7971_row1_col4 {
+#T_67e90_row1_col4 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_e7971_row2_col0 {
+#T_67e90_row2_col0 {
   background-color: #9b64ff;
   color: #f1f1f1;
 }
-#T_e7971_row2_col1 {
+#T_67e90_row2_col1 {
   background-color: #0bf4ff;
   color: #000000;
 }
-#T_e7971_row2_col2 {
+#T_67e90_row2_col2 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_e7971_row2_col4 {
+#T_67e90_row2_col4 {
   background-color: #3dc2ff;
   color: #000000;
 }
-#T_e7971_row2_col5 {
+#T_67e90_row2_col5 {
   background-color: #59a6ff;
   color: #f1f1f1;
 }
-#T_e7971_row3_col1, #T_e7971_row5_col3 {
+#T_67e90_row3_col1, #T_67e90_row5_col3 {
   background-color: #9966ff;
   color: #f1f1f1;
 }
-#T_e7971_row3_col2 {
+#T_67e90_row3_col2 {
   background-color: #817eff;
   color: #f1f1f1;
 }
-#T_e7971_row3_col3 {
+#T_67e90_row3_col3 {
   background-color: #49b6ff;
   color: #000000;
 }
-#T_e7971_row3_col4 {
+#T_67e90_row3_col4 {
   background-color: #906fff;
   color: #f1f1f1;
 }
-#T_e7971_row3_col5 {
+#T_67e90_row3_col5 {
   background-color: #837cff;
   color: #f1f1f1;
 }
-#T_e7971_row4_col0 {
+#T_67e90_row4_col0 {
   background-color: #11eeff;
   color: #000000;
 }
-#T_e7971_row4_col1 {
+#T_67e90_row4_col1 {
   background-color: #3fc0ff;
   color: #000000;
 }
-#T_e7971_row4_col2 {
+#T_67e90_row4_col2 {
   background-color: #629dff;
   color: #f1f1f1;
 }
-#T_e7971_row4_col3 {
+#T_67e90_row4_col3 {
   background-color: #45baff;
   color: #000000;
 }
-#T_e7971_row4_col4 {
+#T_67e90_row4_col4 {
   background-color: #926dff;
   color: #f1f1f1;
 }
-#T_e7971_row4_col5 {
+#T_67e90_row4_col5 {
   background-color: #4fb0ff;
   color: #f1f1f1;
 }
-#T_e7971_row5_col0 {
+#T_67e90_row5_col0 {
   background-color: #37c8ff;
   color: #000000;
 }
-#T_e7971_row5_col1 {
+#T_67e90_row5_col1 {
   background-color: #14ebff;
   color: #000000;
 }
-#T_e7971_row5_col2 {
+#T_67e90_row5_col2 {
   background-color: #5da2ff;
   color: #f1f1f1;
 }
-#T_e7971_row5_col4 {
+#T_67e90_row5_col4 {
   background-color: #a25dff;
   color: #f1f1f1;
 }
-#T_e7971_row5_col5 {
+#T_67e90_row5_col5 {
   background-color: #619eff;
   color: #f1f1f1;
 }
 </style>
-<table id="T_e7971">
+<table id="T_67e90">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_e7971_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_e7971_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_e7971_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_e7971_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_e7971_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_e7971_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_67e90_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_67e90_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_67e90_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_67e90_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_67e90_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_67e90_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_e7971_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_e7971_row0_col0">0.677</td>
-<td class="data row0 col1" id="T_e7971_row0_col1">0.683</td>
-<td class="data row0 col2" id="T_e7971_row0_col2">0.694</td>
-<td class="data row0 col3" id="T_e7971_row0_col3">0.676</td>
-<td class="data row0 col4" id="T_e7971_row0_col4">0.681</td>
-<td class="data row0 col5" id="T_e7971_row0_col5">0.682</td>
+<th class="row_heading level0 row0" id="T_67e90_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_67e90_row0_col0">0.677</td>
+<td class="data row0 col1" id="T_67e90_row0_col1">0.683</td>
+<td class="data row0 col2" id="T_67e90_row0_col2">0.694</td>
+<td class="data row0 col3" id="T_67e90_row0_col3">0.676</td>
+<td class="data row0 col4" id="T_67e90_row0_col4">0.681</td>
+<td class="data row0 col5" id="T_67e90_row0_col5">0.682</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_e7971_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_e7971_row1_col0">0.699</td>
-<td class="data row1 col1" id="T_e7971_row1_col1">0.683</td>
-<td class="data row1 col2" id="T_e7971_row1_col2">0.688</td>
-<td class="data row1 col3" id="T_e7971_row1_col3">0.698</td>
-<td class="data row1 col4" id="T_e7971_row1_col4">0.700</td>
-<td class="data row1 col5" id="T_e7971_row1_col5">0.693</td>
+<th class="row_heading level0 row1" id="T_67e90_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_67e90_row1_col0">0.699</td>
+<td class="data row1 col1" id="T_67e90_row1_col1">0.683</td>
+<td class="data row1 col2" id="T_67e90_row1_col2">0.688</td>
+<td class="data row1 col3" id="T_67e90_row1_col3">0.698</td>
+<td class="data row1 col4" id="T_67e90_row1_col4">0.700</td>
+<td class="data row1 col5" id="T_67e90_row1_col5">0.693</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_e7971_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_e7971_row2_col0">0.684</td>
-<td class="data row2 col1" id="T_e7971_row2_col1">0.661</td>
-<td class="data row2 col2" id="T_e7971_row2_col2">0.659</td>
-<td class="data row2 col3" id="T_e7971_row2_col3">0.693</td>
-<td class="data row2 col4" id="T_e7971_row2_col4">0.669</td>
-<td class="data row2 col5" id="T_e7971_row2_col5">0.673</td>
+<th class="row_heading level0 row2" id="T_67e90_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_67e90_row2_col0">0.684</td>
+<td class="data row2 col1" id="T_67e90_row2_col1">0.661</td>
+<td class="data row2 col2" id="T_67e90_row2_col2">0.659</td>
+<td class="data row2 col3" id="T_67e90_row2_col3">0.693</td>
+<td class="data row2 col4" id="T_67e90_row2_col4">0.669</td>
+<td class="data row2 col5" id="T_67e90_row2_col5">0.673</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_e7971_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_e7971_row3_col0">0.683</td>
-<td class="data row3 col1" id="T_e7971_row3_col1">0.683</td>
-<td class="data row3 col2" id="T_e7971_row3_col2">0.680</td>
-<td class="data row3 col3" id="T_e7971_row3_col3">0.671</td>
-<td class="data row3 col4" id="T_e7971_row3_col4">0.682</td>
-<td class="data row3 col5" id="T_e7971_row3_col5">0.680</td>
+<th class="row_heading level0 row3" id="T_67e90_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_67e90_row3_col0">0.683</td>
+<td class="data row3 col1" id="T_67e90_row3_col1">0.683</td>
+<td class="data row3 col2" id="T_67e90_row3_col2">0.680</td>
+<td class="data row3 col3" id="T_67e90_row3_col3">0.671</td>
+<td class="data row3 col4" id="T_67e90_row3_col4">0.682</td>
+<td class="data row3 col5" id="T_67e90_row3_col5">0.680</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_e7971_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_e7971_row4_col0">0.662</td>
-<td class="data row4 col1" id="T_e7971_row4_col1">0.669</td>
-<td class="data row4 col2" id="T_e7971_row4_col2">0.675</td>
-<td class="data row4 col3" id="T_e7971_row4_col3">0.670</td>
-<td class="data row4 col4" id="T_e7971_row4_col4">0.682</td>
-<td class="data row4 col5" id="T_e7971_row4_col5">0.671</td>
+<th class="row_heading level0 row4" id="T_67e90_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_67e90_row4_col0">0.662</td>
+<td class="data row4 col1" id="T_67e90_row4_col1">0.669</td>
+<td class="data row4 col2" id="T_67e90_row4_col2">0.675</td>
+<td class="data row4 col3" id="T_67e90_row4_col3">0.670</td>
+<td class="data row4 col4" id="T_67e90_row4_col4">0.682</td>
+<td class="data row4 col5" id="T_67e90_row4_col5">0.671</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_e7971_level0_row5">White</th>
-<td class="data row5 col0" id="T_e7971_row5_col0">0.668</td>
-<td class="data row5 col1" id="T_e7971_row5_col1">0.662</td>
-<td class="data row5 col2" id="T_e7971_row5_col2">0.674</td>
-<td class="data row5 col3" id="T_e7971_row5_col3">0.683</td>
-<td class="data row5 col4" id="T_e7971_row5_col4">0.685</td>
-<td class="data row5 col5" id="T_e7971_row5_col5">0.674</td>
+<th class="row_heading level0 row5" id="T_67e90_level0_row5">White</th>
+<td class="data row5 col0" id="T_67e90_row5_col0">0.668</td>
+<td class="data row5 col1" id="T_67e90_row5_col1">0.662</td>
+<td class="data row5 col2" id="T_67e90_row5_col2">0.674</td>
+<td class="data row5 col3" id="T_67e90_row5_col3">0.683</td>
+<td class="data row5 col4" id="T_67e90_row5_col4">0.685</td>
+<td class="data row5 col5" id="T_67e90_row5_col5">0.674</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_e7971_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_e7971_foot0_row0_col0">0.679</td>
-<td class="foot0_data foot0_row0 col1" id="T_e7971_foot0_row0_col1">0.674</td>
-<td class="foot0_data foot0_row0 col2" id="T_e7971_foot0_row0_col2">0.678</td>
-<td class="foot0_data foot0_row0 col3" id="T_e7971_foot0_row0_col3">0.682</td>
-<td class="foot0_data foot0_row0 col4" id="T_e7971_foot0_row0_col4">0.683</td>
-<td class="foot0_data foot0_row0 col5" id="T_e7971_foot0_row0_col5">0.679</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_67e90_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_67e90_foot0_row0_col0">0.679</td>
+<td class="foot0_data foot0_row0 col1" id="T_67e90_foot0_row0_col1">0.674</td>
+<td class="foot0_data foot0_row0 col2" id="T_67e90_foot0_row0_col2">0.678</td>
+<td class="foot0_data foot0_row0 col3" id="T_67e90_foot0_row0_col3">0.682</td>
+<td class="foot0_data foot0_row0 col4" id="T_67e90_foot0_row0_col4">0.683</td>
+<td class="foot0_data foot0_row0 col5" id="T_67e90_foot0_row0_col5">0.679</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_e7971_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_e7971_foot0_row1_col0">0.012</td>
-<td class="foot0_data foot0_row1 col1" id="T_e7971_foot0_row1_col1">0.010</td>
-<td class="foot0_data foot0_row1 col2" id="T_e7971_foot0_row1_col2">0.011</td>
-<td class="foot0_data foot0_row1 col3" id="T_e7971_foot0_row1_col3">0.011</td>
-<td class="foot0_data foot0_row1 col4" id="T_e7971_foot0_row1_col4">0.009</td>
-<td class="foot0_data foot0_row1 col5" id="T_e7971_foot0_row1_col5">0.011</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_67e90_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_67e90_foot0_row1_col0">0.012</td>
+<td class="foot0_data foot0_row1 col1" id="T_67e90_foot0_row1_col1">0.010</td>
+<td class="foot0_data foot0_row1 col2" id="T_67e90_foot0_row1_col2">0.011</td>
+<td class="foot0_data foot0_row1 col3" id="T_67e90_foot0_row1_col3">0.011</td>
+<td class="foot0_data foot0_row1 col4" id="T_67e90_foot0_row1_col4">0.009</td>
+<td class="foot0_data foot0_row1 col5" id="T_67e90_foot0_row1_col5">0.011</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_e7971_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_e7971_foot0_row2_col0">0.667</td>
-<td class="foot0_data foot0_row2 col1" id="T_e7971_foot0_row2_col1">0.664</td>
-<td class="foot0_data foot0_row2 col2" id="T_e7971_foot0_row2_col2">0.667</td>
-<td class="foot0_data foot0_row2 col3" id="T_e7971_foot0_row2_col3">0.671</td>
-<td class="foot0_data foot0_row2 col4" id="T_e7971_foot0_row2_col4">0.674</td>
-<td class="foot0_data foot0_row2 col5" id="T_e7971_foot0_row2_col5">0.669</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_67e90_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_67e90_foot0_row2_col0">0.667</td>
+<td class="foot0_data foot0_row2 col1" id="T_67e90_foot0_row2_col1">0.664</td>
+<td class="foot0_data foot0_row2 col2" id="T_67e90_foot0_row2_col2">0.667</td>
+<td class="foot0_data foot0_row2 col3" id="T_67e90_foot0_row2_col3">0.671</td>
+<td class="foot0_data foot0_row2 col4" id="T_67e90_foot0_row2_col4">0.674</td>
+<td class="foot0_data foot0_row2 col5" id="T_67e90_foot0_row2_col5">0.669</td>
 </tr>
 </tbody>
 </table>
@@ -10715,236 +10738,236 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_71eda_row0_col0 {
+#T_2c260_row0_col0 {
   background-color: #b34cff;
   color: #f1f1f1;
 }
-#T_71eda_row0_col1 {
+#T_2c260_row0_col1 {
   background-color: #ea15ff;
   color: #f1f1f1;
 }
-#T_71eda_row0_col2 {
+#T_2c260_row0_col2 {
   background-color: #be41ff;
   color: #f1f1f1;
 }
-#T_71eda_row0_col3 {
+#T_2c260_row0_col3 {
   background-color: #8877ff;
   color: #f1f1f1;
 }
-#T_71eda_row0_col4, #T_71eda_row3_col1 {
+#T_2c260_row0_col4, #T_2c260_row3_col1 {
   background-color: #b649ff;
   color: #f1f1f1;
 }
-#T_71eda_row0_col5, #T_71eda_row1_col2 {
+#T_2c260_row0_col5, #T_2c260_row1_col2 {
   background-color: #b847ff;
   color: #f1f1f1;
 }
-#T_71eda_row1_col0 {
+#T_2c260_row1_col0 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_71eda_row1_col1 {
+#T_2c260_row1_col1 {
   background-color: #cf30ff;
   color: #f1f1f1;
 }
-#T_71eda_row1_col3 {
+#T_2c260_row1_col3 {
   background-color: #b44bff;
   color: #f1f1f1;
 }
-#T_71eda_row1_col4 {
+#T_2c260_row1_col4 {
   background-color: #f906ff;
   color: #f1f1f1;
 }
-#T_71eda_row1_col5 {
+#T_2c260_row1_col5 {
   background-color: #d728ff;
   color: #f1f1f1;
 }
-#T_71eda_row2_col0 {
+#T_2c260_row2_col0 {
   background-color: #8976ff;
   color: #f1f1f1;
 }
-#T_71eda_row2_col1 {
+#T_2c260_row2_col1 {
   background-color: #09f6ff;
   color: #000000;
 }
-#T_71eda_row2_col2 {
+#T_2c260_row2_col2 {
   background-color: #54abff;
   color: #f1f1f1;
 }
-#T_71eda_row2_col3 {
+#T_2c260_row2_col3 {
   background-color: #a956ff;
   color: #f1f1f1;
 }
-#T_71eda_row2_col4 {
+#T_2c260_row2_col4 {
   background-color: #5ca3ff;
   color: #f1f1f1;
 }
-#T_71eda_row2_col5 {
+#T_2c260_row2_col5 {
   background-color: #629dff;
   color: #f1f1f1;
 }
-#T_71eda_row3_col0 {
+#T_2c260_row3_col0 {
   background-color: #c837ff;
   color: #f1f1f1;
 }
-#T_71eda_row3_col2 {
+#T_2c260_row3_col2 {
   background-color: #a25dff;
   color: #f1f1f1;
 }
-#T_71eda_row3_col3 {
+#T_2c260_row3_col3 {
   background-color: #7d82ff;
   color: #f1f1f1;
 }
-#T_71eda_row3_col4 {
+#T_2c260_row3_col4 {
   background-color: #9966ff;
   color: #f1f1f1;
 }
-#T_71eda_row3_col5 {
+#T_2c260_row3_col5 {
   background-color: #a45bff;
   color: #f1f1f1;
 }
-#T_71eda_row4_col0 {
+#T_2c260_row4_col0 {
   background-color: #4bb4ff;
   color: #000000;
 }
-#T_71eda_row4_col1 {
+#T_2c260_row4_col1 {
   background-color: #ad52ff;
   color: #f1f1f1;
 }
-#T_71eda_row4_col2 {
+#T_2c260_row4_col2 {
   background-color: #5ba4ff;
   color: #f1f1f1;
 }
-#T_71eda_row4_col3 {
+#T_2c260_row4_col3 {
   background-color: #5da2ff;
   color: #f1f1f1;
 }
-#T_71eda_row4_col4 {
+#T_2c260_row4_col4 {
   background-color: #b14eff;
   color: #f1f1f1;
 }
-#T_71eda_row4_col5 {
+#T_2c260_row4_col5 {
   background-color: #7a85ff;
   color: #f1f1f1;
 }
-#T_71eda_row5_col0 {
+#T_2c260_row5_col0 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_71eda_row5_col1 {
+#T_2c260_row5_col1 {
   background-color: #35caff;
   color: #000000;
 }
-#T_71eda_row5_col2 {
+#T_2c260_row5_col2 {
   background-color: #708fff;
   color: #f1f1f1;
 }
-#T_71eda_row5_col3 {
+#T_2c260_row5_col3 {
   background-color: #6996ff;
   color: #f1f1f1;
 }
-#T_71eda_row5_col4 {
+#T_2c260_row5_col4 {
   background-color: #837cff;
   color: #f1f1f1;
 }
-#T_71eda_row5_col5 {
+#T_2c260_row5_col5 {
   background-color: #50afff;
   color: #f1f1f1;
 }
 </style>
-<table id="T_71eda">
+<table id="T_2c260">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_71eda_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_71eda_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_71eda_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_71eda_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_71eda_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_71eda_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_2c260_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_2c260_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_2c260_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_2c260_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_2c260_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_2c260_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_71eda_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_71eda_row0_col0">0.686</td>
-<td class="data row0 col1" id="T_71eda_row0_col1">0.699</td>
-<td class="data row0 col2" id="T_71eda_row0_col2">0.689</td>
-<td class="data row0 col3" id="T_71eda_row0_col3">0.677</td>
-<td class="data row0 col4" id="T_71eda_row0_col4">0.687</td>
-<td class="data row0 col5" id="T_71eda_row0_col5">0.688</td>
+<th class="row_heading level0 row0" id="T_2c260_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_2c260_row0_col0">0.686</td>
+<td class="data row0 col1" id="T_2c260_row0_col1">0.699</td>
+<td class="data row0 col2" id="T_2c260_row0_col2">0.689</td>
+<td class="data row0 col3" id="T_2c260_row0_col3">0.677</td>
+<td class="data row0 col4" id="T_2c260_row0_col4">0.687</td>
+<td class="data row0 col5" id="T_2c260_row0_col5">0.688</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_71eda_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_71eda_row1_col0">0.704</td>
-<td class="data row1 col1" id="T_71eda_row1_col1">0.693</td>
-<td class="data row1 col2" id="T_71eda_row1_col2">0.687</td>
-<td class="data row1 col3" id="T_71eda_row1_col3">0.687</td>
-<td class="data row1 col4" id="T_71eda_row1_col4">0.702</td>
-<td class="data row1 col5" id="T_71eda_row1_col5">0.694</td>
+<th class="row_heading level0 row1" id="T_2c260_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_2c260_row1_col0">0.704</td>
+<td class="data row1 col1" id="T_2c260_row1_col1">0.693</td>
+<td class="data row1 col2" id="T_2c260_row1_col2">0.687</td>
+<td class="data row1 col3" id="T_2c260_row1_col3">0.687</td>
+<td class="data row1 col4" id="T_2c260_row1_col4">0.702</td>
+<td class="data row1 col5" id="T_2c260_row1_col5">0.694</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_71eda_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_71eda_row2_col0">0.677</td>
-<td class="data row2 col1" id="T_71eda_row2_col1">0.648</td>
-<td class="data row2 col2" id="T_71eda_row2_col2">0.665</td>
-<td class="data row2 col3" id="T_71eda_row2_col3">0.684</td>
-<td class="data row2 col4" id="T_71eda_row2_col4">0.667</td>
-<td class="data row2 col5" id="T_71eda_row2_col5">0.668</td>
+<th class="row_heading level0 row2" id="T_2c260_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_2c260_row2_col0">0.677</td>
+<td class="data row2 col1" id="T_2c260_row2_col1">0.648</td>
+<td class="data row2 col2" id="T_2c260_row2_col2">0.665</td>
+<td class="data row2 col3" id="T_2c260_row2_col3">0.684</td>
+<td class="data row2 col4" id="T_2c260_row2_col4">0.667</td>
+<td class="data row2 col5" id="T_2c260_row2_col5">0.668</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_71eda_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_71eda_row3_col0">0.691</td>
-<td class="data row3 col1" id="T_71eda_row3_col1">0.687</td>
-<td class="data row3 col2" id="T_71eda_row3_col2">0.683</td>
-<td class="data row3 col3" id="T_71eda_row3_col3">0.674</td>
-<td class="data row3 col4" id="T_71eda_row3_col4">0.681</td>
-<td class="data row3 col5" id="T_71eda_row3_col5">0.683</td>
+<th class="row_heading level0 row3" id="T_2c260_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_2c260_row3_col0">0.691</td>
+<td class="data row3 col1" id="T_2c260_row3_col1">0.687</td>
+<td class="data row3 col2" id="T_2c260_row3_col2">0.683</td>
+<td class="data row3 col3" id="T_2c260_row3_col3">0.674</td>
+<td class="data row3 col4" id="T_2c260_row3_col4">0.681</td>
+<td class="data row3 col5" id="T_2c260_row3_col5">0.683</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_71eda_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_71eda_row4_col0">0.663</td>
-<td class="data row4 col1" id="T_71eda_row4_col1">0.685</td>
-<td class="data row4 col2" id="T_71eda_row4_col2">0.667</td>
-<td class="data row4 col3" id="T_71eda_row4_col3">0.667</td>
-<td class="data row4 col4" id="T_71eda_row4_col4">0.686</td>
-<td class="data row4 col5" id="T_71eda_row4_col5">0.674</td>
+<th class="row_heading level0 row4" id="T_2c260_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_2c260_row4_col0">0.663</td>
+<td class="data row4 col1" id="T_2c260_row4_col1">0.685</td>
+<td class="data row4 col2" id="T_2c260_row4_col2">0.667</td>
+<td class="data row4 col3" id="T_2c260_row4_col3">0.667</td>
+<td class="data row4 col4" id="T_2c260_row4_col4">0.686</td>
+<td class="data row4 col5" id="T_2c260_row4_col5">0.674</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_71eda_level0_row5">White</th>
-<td class="data row5 col0" id="T_71eda_row5_col0">0.646</td>
-<td class="data row5 col1" id="T_71eda_row5_col1">0.658</td>
-<td class="data row5 col2" id="T_71eda_row5_col2">0.671</td>
-<td class="data row5 col3" id="T_71eda_row5_col3">0.670</td>
-<td class="data row5 col4" id="T_71eda_row5_col4">0.676</td>
-<td class="data row5 col5" id="T_71eda_row5_col5">0.664</td>
+<th class="row_heading level0 row5" id="T_2c260_level0_row5">White</th>
+<td class="data row5 col0" id="T_2c260_row5_col0">0.646</td>
+<td class="data row5 col1" id="T_2c260_row5_col1">0.658</td>
+<td class="data row5 col2" id="T_2c260_row5_col2">0.671</td>
+<td class="data row5 col3" id="T_2c260_row5_col3">0.670</td>
+<td class="data row5 col4" id="T_2c260_row5_col4">0.676</td>
+<td class="data row5 col5" id="T_2c260_row5_col5">0.664</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_71eda_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_71eda_foot0_row0_col0">0.678</td>
-<td class="foot0_data foot0_row0 col1" id="T_71eda_foot0_row0_col1">0.678</td>
-<td class="foot0_data foot0_row0 col2" id="T_71eda_foot0_row0_col2">0.677</td>
-<td class="foot0_data foot0_row0 col3" id="T_71eda_foot0_row0_col3">0.676</td>
-<td class="foot0_data foot0_row0 col4" id="T_71eda_foot0_row0_col4">0.683</td>
-<td class="foot0_data foot0_row0 col5" id="T_71eda_foot0_row0_col5">0.679</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_2c260_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_2c260_foot0_row0_col0">0.678</td>
+<td class="foot0_data foot0_row0 col1" id="T_2c260_foot0_row0_col1">0.678</td>
+<td class="foot0_data foot0_row0 col2" id="T_2c260_foot0_row0_col2">0.677</td>
+<td class="foot0_data foot0_row0 col3" id="T_2c260_foot0_row0_col3">0.676</td>
+<td class="foot0_data foot0_row0 col4" id="T_2c260_foot0_row0_col4">0.683</td>
+<td class="foot0_data foot0_row0 col5" id="T_2c260_foot0_row0_col5">0.679</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_71eda_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_71eda_foot0_row1_col0">0.019</td>
-<td class="foot0_data foot0_row1 col1" id="T_71eda_foot0_row1_col1">0.018</td>
-<td class="foot0_data foot0_row1 col2" id="T_71eda_foot0_row1_col2">0.010</td>
-<td class="foot0_data foot0_row1 col3" id="T_71eda_foot0_row1_col3">0.007</td>
-<td class="foot0_data foot0_row1 col4" id="T_71eda_foot0_row1_col4">0.011</td>
-<td class="foot0_data foot0_row1 col5" id="T_71eda_foot0_row1_col5">0.013</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_2c260_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_2c260_foot0_row1_col0">0.019</td>
+<td class="foot0_data foot0_row1 col1" id="T_2c260_foot0_row1_col1">0.018</td>
+<td class="foot0_data foot0_row1 col2" id="T_2c260_foot0_row1_col2">0.010</td>
+<td class="foot0_data foot0_row1 col3" id="T_2c260_foot0_row1_col3">0.007</td>
+<td class="foot0_data foot0_row1 col4" id="T_2c260_foot0_row1_col4">0.011</td>
+<td class="foot0_data foot0_row1 col5" id="T_2c260_foot0_row1_col5">0.013</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_71eda_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_71eda_foot0_row2_col0">0.659</td>
-<td class="foot0_data foot0_row2 col1" id="T_71eda_foot0_row2_col1">0.660</td>
-<td class="foot0_data foot0_row2 col2" id="T_71eda_foot0_row2_col2">0.667</td>
-<td class="foot0_data foot0_row2 col3" id="T_71eda_foot0_row2_col3">0.669</td>
-<td class="foot0_data foot0_row2 col4" id="T_71eda_foot0_row2_col4">0.672</td>
-<td class="foot0_data foot0_row2 col5" id="T_71eda_foot0_row2_col5">0.666</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_2c260_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_2c260_foot0_row2_col0">0.659</td>
+<td class="foot0_data foot0_row2 col1" id="T_2c260_foot0_row2_col1">0.660</td>
+<td class="foot0_data foot0_row2 col2" id="T_2c260_foot0_row2_col2">0.667</td>
+<td class="foot0_data foot0_row2 col3" id="T_2c260_foot0_row2_col3">0.669</td>
+<td class="foot0_data foot0_row2 col4" id="T_2c260_foot0_row2_col4">0.672</td>
+<td class="foot0_data foot0_row2 col5" id="T_2c260_foot0_row2_col5">0.666</td>
 </tr>
 </tbody>
 </table>
@@ -10980,232 +11003,232 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_04cec_row0_col0 {
+#T_d4126_row0_col0 {
   background-color: #817eff;
   color: #f1f1f1;
 }
-#T_04cec_row0_col1 {
+#T_d4126_row0_col1 {
   background-color: #ba45ff;
   color: #f1f1f1;
 }
-#T_04cec_row0_col2 {
+#T_d4126_row0_col2 {
   background-color: #d12eff;
   color: #f1f1f1;
 }
-#T_04cec_row0_col3 {
+#T_d4126_row0_col3 {
   background-color: #708fff;
   color: #f1f1f1;
 }
-#T_04cec_row0_col4 {
+#T_d4126_row0_col4 {
   background-color: #9768ff;
   color: #f1f1f1;
 }
-#T_04cec_row0_col5 {
+#T_d4126_row0_col5 {
   background-color: #9d62ff;
   color: #f1f1f1;
 }
-#T_04cec_row1_col0 {
+#T_d4126_row1_col0 {
   background-color: #ee11ff;
   color: #f1f1f1;
 }
-#T_04cec_row1_col1, #T_04cec_row3_col2 {
+#T_d4126_row1_col1, #T_d4126_row3_col2 {
   background-color: #9966ff;
   color: #f1f1f1;
 }
-#T_04cec_row1_col2, #T_04cec_row3_col0 {
+#T_d4126_row1_col2, #T_d4126_row3_col0 {
   background-color: #a45bff;
   color: #f1f1f1;
 }
-#T_04cec_row1_col3 {
+#T_d4126_row1_col3 {
   background-color: #e817ff;
   color: #f1f1f1;
 }
-#T_04cec_row1_col4 {
+#T_d4126_row1_col4 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_04cec_row1_col5 {
+#T_d4126_row1_col5 {
   background-color: #d02fff;
   color: #f1f1f1;
 }
-#T_04cec_row2_col0 {
+#T_d4126_row2_col0 {
   background-color: #8877ff;
   color: #f1f1f1;
 }
-#T_04cec_row2_col1 {
+#T_d4126_row2_col1 {
   background-color: #19e6ff;
   color: #000000;
 }
-#T_04cec_row2_col2 {
+#T_d4126_row2_col2 {
   background-color: #1fe0ff;
   color: #000000;
 }
-#T_04cec_row2_col3 {
+#T_d4126_row2_col3 {
   background-color: #a956ff;
   color: #f1f1f1;
 }
-#T_04cec_row2_col4 {
+#T_d4126_row2_col4 {
   background-color: #49b6ff;
   color: #000000;
 }
-#T_04cec_row2_col5 {
+#T_d4126_row2_col5 {
   background-color: #57a8ff;
   color: #f1f1f1;
 }
-#T_04cec_row3_col1 {
+#T_d4126_row3_col1 {
   background-color: #af50ff;
   color: #f1f1f1;
 }
-#T_04cec_row3_col3 {
+#T_d4126_row3_col3 {
   background-color: #6996ff;
   color: #f1f1f1;
 }
-#T_04cec_row3_col4 {
+#T_d4126_row3_col4 {
   background-color: #8b74ff;
   color: #f1f1f1;
 }
-#T_04cec_row3_col5 {
+#T_d4126_row3_col5 {
   background-color: #936cff;
   color: #f1f1f1;
 }
-#T_04cec_row4_col0 {
+#T_d4126_row4_col0 {
   background-color: #33ccff;
   color: #000000;
 }
-#T_04cec_row4_col1 {
+#T_d4126_row4_col1 {
   background-color: #6a95ff;
   color: #f1f1f1;
 }
-#T_04cec_row4_col2 {
+#T_d4126_row4_col2 {
   background-color: #639cff;
   color: #f1f1f1;
 }
-#T_04cec_row4_col3 {
+#T_d4126_row4_col3 {
   background-color: #53acff;
   color: #f1f1f1;
 }
-#T_04cec_row4_col4 {
+#T_d4126_row4_col4 {
   background-color: #8a75ff;
   color: #f1f1f1;
 }
-#T_04cec_row4_col5 {
+#T_d4126_row4_col5 {
   background-color: #5fa0ff;
   color: #f1f1f1;
 }
-#T_04cec_row5_col0, #T_04cec_row5_col1 {
+#T_d4126_row5_col0, #T_d4126_row5_col1 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_04cec_row5_col2 {
+#T_d4126_row5_col2 {
   background-color: #55aaff;
   color: #f1f1f1;
 }
-#T_04cec_row5_col3 {
+#T_d4126_row5_col3 {
   background-color: #7b84ff;
   color: #f1f1f1;
 }
-#T_04cec_row5_col4 {
+#T_d4126_row5_col4 {
   background-color: #758aff;
   color: #f1f1f1;
 }
-#T_04cec_row5_col5 {
+#T_d4126_row5_col5 {
   background-color: #41beff;
   color: #000000;
 }
 </style>
-<table id="T_04cec">
+<table id="T_d4126">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_04cec_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_04cec_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_04cec_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_04cec_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_04cec_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_04cec_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_d4126_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_d4126_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_d4126_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_d4126_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_d4126_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_d4126_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_04cec_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_04cec_row0_col0">0.684</td>
-<td class="data row0 col1" id="T_04cec_row0_col1">0.695</td>
-<td class="data row0 col2" id="T_04cec_row0_col2">0.699</td>
-<td class="data row0 col3" id="T_04cec_row0_col3">0.681</td>
-<td class="data row0 col4" id="T_04cec_row0_col4">0.688</td>
-<td class="data row0 col5" id="T_04cec_row0_col5">0.689</td>
+<th class="row_heading level0 row0" id="T_d4126_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_d4126_row0_col0">0.684</td>
+<td class="data row0 col1" id="T_d4126_row0_col1">0.695</td>
+<td class="data row0 col2" id="T_d4126_row0_col2">0.699</td>
+<td class="data row0 col3" id="T_d4126_row0_col3">0.681</td>
+<td class="data row0 col4" id="T_d4126_row0_col4">0.688</td>
+<td class="data row0 col5" id="T_d4126_row0_col5">0.689</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_04cec_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_04cec_row1_col0">0.705</td>
-<td class="data row1 col1" id="T_04cec_row1_col1">0.689</td>
-<td class="data row1 col2" id="T_04cec_row1_col2">0.691</td>
-<td class="data row1 col3" id="T_04cec_row1_col3">0.704</td>
-<td class="data row1 col4" id="T_04cec_row1_col4">0.708</td>
-<td class="data row1 col5" id="T_04cec_row1_col5">0.699</td>
+<th class="row_heading level0 row1" id="T_d4126_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_d4126_row1_col0">0.705</td>
+<td class="data row1 col1" id="T_d4126_row1_col1">0.689</td>
+<td class="data row1 col2" id="T_d4126_row1_col2">0.691</td>
+<td class="data row1 col3" id="T_d4126_row1_col3">0.704</td>
+<td class="data row1 col4" id="T_d4126_row1_col4">0.708</td>
+<td class="data row1 col5" id="T_d4126_row1_col5">0.699</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_04cec_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_04cec_row2_col0">0.685</td>
-<td class="data row2 col1" id="T_04cec_row2_col1">0.664</td>
-<td class="data row2 col2" id="T_04cec_row2_col2">0.665</td>
-<td class="data row2 col3" id="T_04cec_row2_col3">0.692</td>
-<td class="data row2 col4" id="T_04cec_row2_col4">0.673</td>
-<td class="data row2 col5" id="T_04cec_row2_col5">0.676</td>
+<th class="row_heading level0 row2" id="T_d4126_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_d4126_row2_col0">0.685</td>
+<td class="data row2 col1" id="T_d4126_row2_col1">0.664</td>
+<td class="data row2 col2" id="T_d4126_row2_col2">0.665</td>
+<td class="data row2 col3" id="T_d4126_row2_col3">0.692</td>
+<td class="data row2 col4" id="T_d4126_row2_col4">0.673</td>
+<td class="data row2 col5" id="T_d4126_row2_col5">0.676</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_04cec_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_04cec_row3_col0">0.691</td>
-<td class="data row3 col1" id="T_04cec_row3_col1">0.693</td>
-<td class="data row3 col2" id="T_04cec_row3_col2">0.689</td>
-<td class="data row3 col3" id="T_04cec_row3_col3">0.679</td>
-<td class="data row3 col4" id="T_04cec_row3_col4">0.686</td>
-<td class="data row3 col5" id="T_04cec_row3_col5">0.688</td>
+<th class="row_heading level0 row3" id="T_d4126_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_d4126_row3_col0">0.691</td>
+<td class="data row3 col1" id="T_d4126_row3_col1">0.693</td>
+<td class="data row3 col2" id="T_d4126_row3_col2">0.689</td>
+<td class="data row3 col3" id="T_d4126_row3_col3">0.679</td>
+<td class="data row3 col4" id="T_d4126_row3_col4">0.686</td>
+<td class="data row3 col5" id="T_d4126_row3_col5">0.688</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_04cec_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_04cec_row4_col0">0.669</td>
-<td class="data row4 col1" id="T_04cec_row4_col1">0.680</td>
-<td class="data row4 col2" id="T_04cec_row4_col2">0.678</td>
-<td class="data row4 col3" id="T_04cec_row4_col3">0.675</td>
-<td class="data row4 col4" id="T_04cec_row4_col4">0.686</td>
-<td class="data row4 col5" id="T_04cec_row4_col5">0.678</td>
+<th class="row_heading level0 row4" id="T_d4126_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_d4126_row4_col0">0.669</td>
+<td class="data row4 col1" id="T_d4126_row4_col1">0.680</td>
+<td class="data row4 col2" id="T_d4126_row4_col2">0.678</td>
+<td class="data row4 col3" id="T_d4126_row4_col3">0.675</td>
+<td class="data row4 col4" id="T_d4126_row4_col4">0.686</td>
+<td class="data row4 col5" id="T_d4126_row4_col5">0.678</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_04cec_level0_row5">White</th>
-<td class="data row5 col0" id="T_04cec_row5_col0">0.659</td>
-<td class="data row5 col1" id="T_04cec_row5_col1">0.659</td>
-<td class="data row5 col2" id="T_04cec_row5_col2">0.676</td>
-<td class="data row5 col3" id="T_04cec_row5_col3">0.683</td>
-<td class="data row5 col4" id="T_04cec_row5_col4">0.682</td>
-<td class="data row5 col5" id="T_04cec_row5_col5">0.672</td>
+<th class="row_heading level0 row5" id="T_d4126_level0_row5">White</th>
+<td class="data row5 col0" id="T_d4126_row5_col0">0.659</td>
+<td class="data row5 col1" id="T_d4126_row5_col1">0.659</td>
+<td class="data row5 col2" id="T_d4126_row5_col2">0.676</td>
+<td class="data row5 col3" id="T_d4126_row5_col3">0.683</td>
+<td class="data row5 col4" id="T_d4126_row5_col4">0.682</td>
+<td class="data row5 col5" id="T_d4126_row5_col5">0.672</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_04cec_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_04cec_foot0_row0_col0">0.682</td>
-<td class="foot0_data foot0_row0 col1" id="T_04cec_foot0_row0_col1">0.680</td>
-<td class="foot0_data foot0_row0 col2" id="T_04cec_foot0_row0_col2">0.683</td>
-<td class="foot0_data foot0_row0 col3" id="T_04cec_foot0_row0_col3">0.686</td>
-<td class="foot0_data foot0_row0 col4" id="T_04cec_foot0_row0_col4">0.687</td>
-<td class="foot0_data foot0_row0 col5" id="T_04cec_foot0_row0_col5">0.684</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_d4126_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_d4126_foot0_row0_col0">0.682</td>
+<td class="foot0_data foot0_row0 col1" id="T_d4126_foot0_row0_col1">0.680</td>
+<td class="foot0_data foot0_row0 col2" id="T_d4126_foot0_row0_col2">0.683</td>
+<td class="foot0_data foot0_row0 col3" id="T_d4126_foot0_row0_col3">0.686</td>
+<td class="foot0_data foot0_row0 col4" id="T_d4126_foot0_row0_col4">0.687</td>
+<td class="foot0_data foot0_row0 col5" id="T_d4126_foot0_row0_col5">0.684</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_04cec_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_04cec_foot0_row1_col0">0.015</td>
-<td class="foot0_data foot0_row1 col1" id="T_04cec_foot0_row1_col1">0.014</td>
-<td class="foot0_data foot0_row1 col2" id="T_04cec_foot0_row1_col2">0.011</td>
-<td class="foot0_data foot0_row1 col3" id="T_04cec_foot0_row1_col3">0.010</td>
-<td class="foot0_data foot0_row1 col4" id="T_04cec_foot0_row1_col4">0.011</td>
-<td class="foot0_data foot0_row1 col5" id="T_04cec_foot0_row1_col5">0.012</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_d4126_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_d4126_foot0_row1_col0">0.015</td>
+<td class="foot0_data foot0_row1 col1" id="T_d4126_foot0_row1_col1">0.014</td>
+<td class="foot0_data foot0_row1 col2" id="T_d4126_foot0_row1_col2">0.011</td>
+<td class="foot0_data foot0_row1 col3" id="T_d4126_foot0_row1_col3">0.010</td>
+<td class="foot0_data foot0_row1 col4" id="T_d4126_foot0_row1_col4">0.011</td>
+<td class="foot0_data foot0_row1 col5" id="T_d4126_foot0_row1_col5">0.012</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_04cec_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_04cec_foot0_row2_col0">0.667</td>
-<td class="foot0_data foot0_row2 col1" id="T_04cec_foot0_row2_col1">0.666</td>
-<td class="foot0_data foot0_row2 col2" id="T_04cec_foot0_row2_col2">0.672</td>
-<td class="foot0_data foot0_row2 col3" id="T_04cec_foot0_row2_col3">0.676</td>
-<td class="foot0_data foot0_row2 col4" id="T_04cec_foot0_row2_col4">0.677</td>
-<td class="foot0_data foot0_row2 col5" id="T_04cec_foot0_row2_col5">0.672</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_d4126_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_d4126_foot0_row2_col0">0.667</td>
+<td class="foot0_data foot0_row2 col1" id="T_d4126_foot0_row2_col1">0.666</td>
+<td class="foot0_data foot0_row2 col2" id="T_d4126_foot0_row2_col2">0.672</td>
+<td class="foot0_data foot0_row2 col3" id="T_d4126_foot0_row2_col3">0.676</td>
+<td class="foot0_data foot0_row2 col4" id="T_d4126_foot0_row2_col4">0.677</td>
+<td class="foot0_data foot0_row2 col5" id="T_d4126_foot0_row2_col5">0.672</td>
 </tr>
 </tbody>
 </table>
@@ -11241,224 +11264,224 @@ We can achieve this result by stretching the range of the patients with a known 
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_2e078_row0_col0 {
+#T_ac4a7_row0_col0 {
   background-color: #9b64ff;
   color: #f1f1f1;
 }
-#T_2e078_row0_col1, #T_2e078_row2_col3 {
+#T_ac4a7_row0_col1, #T_ac4a7_row2_col3 {
   background-color: #b946ff;
   color: #f1f1f1;
 }
-#T_2e078_row0_col2 {
+#T_ac4a7_row0_col2 {
   background-color: #d42bff;
   color: #f1f1f1;
 }
-#T_2e078_row0_col3 {
+#T_ac4a7_row0_col3 {
   background-color: #6699ff;
   color: #f1f1f1;
 }
-#T_2e078_row0_col4 {
+#T_ac4a7_row0_col4 {
   background-color: #a857ff;
   color: #f1f1f1;
 }
-#T_2e078_row0_col5, #T_2e078_row1_col1 {
+#T_ac4a7_row0_col5, #T_ac4a7_row1_col1 {
   background-color: #a45bff;
   color: #f1f1f1;
 }
-#T_2e078_row1_col0 {
+#T_ac4a7_row1_col0 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_2e078_row1_col2 {
+#T_ac4a7_row1_col2 {
   background-color: #ad52ff;
   color: #f1f1f1;
 }
-#T_2e078_row1_col3 {
+#T_ac4a7_row1_col3 {
   background-color: #c639ff;
   color: #f1f1f1;
 }
-#T_2e078_row1_col4 {
+#T_ac4a7_row1_col4 {
   background-color: #fd02ff;
   color: #f1f1f1;
 }
-#T_2e078_row1_col5 {
+#T_ac4a7_row1_col5 {
   background-color: #d12eff;
   color: #f1f1f1;
 }
-#T_2e078_row2_col0 {
+#T_ac4a7_row2_col0 {
   background-color: #8679ff;
   color: #f1f1f1;
 }
-#T_2e078_row2_col1 {
+#T_ac4a7_row2_col1 {
   background-color: #07f8ff;
   color: #000000;
 }
-#T_2e078_row2_col2 {
+#T_ac4a7_row2_col2 {
   background-color: #1de2ff;
   color: #000000;
 }
-#T_2e078_row2_col4 {
+#T_ac4a7_row2_col4 {
   background-color: #3fc0ff;
   color: #000000;
 }
-#T_2e078_row2_col5 {
+#T_ac4a7_row2_col5 {
   background-color: #53acff;
   color: #f1f1f1;
 }
-#T_2e078_row3_col0 {
+#T_ac4a7_row3_col0 {
   background-color: #b24dff;
   color: #f1f1f1;
 }
-#T_2e078_row3_col1 {
+#T_ac4a7_row3_col1 {
   background-color: #b748ff;
   color: #f1f1f1;
 }
-#T_2e078_row3_col2, #T_2e078_row3_col4, #T_2e078_row3_col5 {
+#T_ac4a7_row3_col2, #T_ac4a7_row3_col4, #T_ac4a7_row3_col5 {
   background-color: #9768ff;
   color: #f1f1f1;
 }
-#T_2e078_row3_col3 {
+#T_ac4a7_row3_col3 {
   background-color: #5ca3ff;
   color: #f1f1f1;
 }
-#T_2e078_row4_col0 {
+#T_ac4a7_row4_col0 {
   background-color: #37c8ff;
   color: #000000;
 }
-#T_2e078_row4_col1 {
+#T_ac4a7_row4_col1 {
   background-color: #7c83ff;
   color: #f1f1f1;
 }
-#T_2e078_row4_col2 {
+#T_ac4a7_row4_col2 {
   background-color: #46b9ff;
   color: #000000;
 }
-#T_2e078_row4_col3, #T_2e078_row5_col2 {
+#T_ac4a7_row4_col3, #T_ac4a7_row5_col2 {
   background-color: #55aaff;
   color: #f1f1f1;
 }
-#T_2e078_row4_col4 {
+#T_ac4a7_row4_col4 {
   background-color: #9966ff;
   color: #f1f1f1;
 }
-#T_2e078_row4_col5 {
+#T_ac4a7_row4_col5 {
   background-color: #619eff;
   color: #f1f1f1;
 }
-#T_2e078_row5_col0 {
+#T_ac4a7_row5_col0 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_2e078_row5_col1 {
+#T_ac4a7_row5_col1 {
   background-color: #15eaff;
   color: #000000;
 }
-#T_2e078_row5_col3 {
+#T_ac4a7_row5_col3 {
   background-color: #7887ff;
   color: #f1f1f1;
 }
-#T_2e078_row5_col4 {
+#T_ac4a7_row5_col4 {
   background-color: #857aff;
   color: #f1f1f1;
 }
-#T_2e078_row5_col5 {
+#T_ac4a7_row5_col5 {
   background-color: #48b7ff;
   color: #000000;
 }
 </style>
-<table id="T_2e078">
+<table id="T_ac4a7">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_2e078_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_2e078_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_2e078_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_2e078_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_2e078_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_2e078_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_ac4a7_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_ac4a7_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_ac4a7_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_ac4a7_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_ac4a7_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_ac4a7_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_2e078_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_2e078_row0_col0">0.691</td>
-<td class="data row0 col1" id="T_2e078_row0_col1">0.696</td>
-<td class="data row0 col2" id="T_2e078_row0_col2">0.701</td>
-<td class="data row0 col3" id="T_2e078_row0_col3">0.681</td>
-<td class="data row0 col4" id="T_2e078_row0_col4">0.693</td>
-<td class="data row0 col5" id="T_2e078_row0_col5">0.692</td>
+<th class="row_heading level0 row0" id="T_ac4a7_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_ac4a7_row0_col0">0.691</td>
+<td class="data row0 col1" id="T_ac4a7_row0_col1">0.696</td>
+<td class="data row0 col2" id="T_ac4a7_row0_col2">0.701</td>
+<td class="data row0 col3" id="T_ac4a7_row0_col3">0.681</td>
+<td class="data row0 col4" id="T_ac4a7_row0_col4">0.693</td>
+<td class="data row0 col5" id="T_ac4a7_row0_col5">0.692</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_2e078_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_2e078_row1_col0">0.709</td>
-<td class="data row1 col1" id="T_2e078_row1_col1">0.692</td>
-<td class="data row1 col2" id="T_2e078_row1_col2">0.694</td>
-<td class="data row1 col3" id="T_2e078_row1_col3">0.699</td>
-<td class="data row1 col4" id="T_2e078_row1_col4">0.709</td>
-<td class="data row1 col5" id="T_2e078_row1_col5">0.700</td>
+<th class="row_heading level0 row1" id="T_ac4a7_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_ac4a7_row1_col0">0.709</td>
+<td class="data row1 col1" id="T_ac4a7_row1_col1">0.692</td>
+<td class="data row1 col2" id="T_ac4a7_row1_col2">0.694</td>
+<td class="data row1 col3" id="T_ac4a7_row1_col3">0.699</td>
+<td class="data row1 col4" id="T_ac4a7_row1_col4">0.709</td>
+<td class="data row1 col5" id="T_ac4a7_row1_col5">0.700</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_2e078_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_2e078_row2_col0">0.687</td>
-<td class="data row2 col1" id="T_2e078_row2_col1">0.664</td>
-<td class="data row2 col2" id="T_2e078_row2_col2">0.668</td>
-<td class="data row2 col3" id="T_2e078_row2_col3">0.696</td>
-<td class="data row2 col4" id="T_2e078_row2_col4">0.674</td>
-<td class="data row2 col5" id="T_2e078_row2_col5">0.678</td>
+<th class="row_heading level0 row2" id="T_ac4a7_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_ac4a7_row2_col0">0.687</td>
+<td class="data row2 col1" id="T_ac4a7_row2_col1">0.664</td>
+<td class="data row2 col2" id="T_ac4a7_row2_col2">0.668</td>
+<td class="data row2 col3" id="T_ac4a7_row2_col3">0.696</td>
+<td class="data row2 col4" id="T_ac4a7_row2_col4">0.674</td>
+<td class="data row2 col5" id="T_ac4a7_row2_col5">0.678</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_2e078_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_2e078_row3_col0">0.695</td>
-<td class="data row3 col1" id="T_2e078_row3_col1">0.696</td>
-<td class="data row3 col2" id="T_2e078_row3_col2">0.690</td>
-<td class="data row3 col3" id="T_2e078_row3_col3">0.679</td>
-<td class="data row3 col4" id="T_2e078_row3_col4">0.690</td>
-<td class="data row3 col5" id="T_2e078_row3_col5">0.690</td>
+<th class="row_heading level0 row3" id="T_ac4a7_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_ac4a7_row3_col0">0.695</td>
+<td class="data row3 col1" id="T_ac4a7_row3_col1">0.696</td>
+<td class="data row3 col2" id="T_ac4a7_row3_col2">0.690</td>
+<td class="data row3 col3" id="T_ac4a7_row3_col3">0.679</td>
+<td class="data row3 col4" id="T_ac4a7_row3_col4">0.690</td>
+<td class="data row3 col5" id="T_ac4a7_row3_col5">0.690</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_2e078_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_2e078_row4_col0">0.672</td>
-<td class="data row4 col1" id="T_2e078_row4_col1">0.685</td>
-<td class="data row4 col2" id="T_2e078_row4_col2">0.675</td>
-<td class="data row4 col3" id="T_2e078_row4_col3">0.678</td>
-<td class="data row4 col4" id="T_2e078_row4_col4">0.690</td>
-<td class="data row4 col5" id="T_2e078_row4_col5">0.680</td>
+<th class="row_heading level0 row4" id="T_ac4a7_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_ac4a7_row4_col0">0.672</td>
+<td class="data row4 col1" id="T_ac4a7_row4_col1">0.685</td>
+<td class="data row4 col2" id="T_ac4a7_row4_col2">0.675</td>
+<td class="data row4 col3" id="T_ac4a7_row4_col3">0.678</td>
+<td class="data row4 col4" id="T_ac4a7_row4_col4">0.690</td>
+<td class="data row4 col5" id="T_ac4a7_row4_col5">0.680</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_2e078_level0_row5">White</th>
-<td class="data row5 col0" id="T_2e078_row5_col0">0.662</td>
-<td class="data row5 col1" id="T_2e078_row5_col1">0.666</td>
-<td class="data row5 col2" id="T_2e078_row5_col2">0.678</td>
-<td class="data row5 col3" id="T_2e078_row5_col3">0.684</td>
-<td class="data row5 col4" id="T_2e078_row5_col4">0.687</td>
-<td class="data row5 col5" id="T_2e078_row5_col5">0.675</td>
+<th class="row_heading level0 row5" id="T_ac4a7_level0_row5">White</th>
+<td class="data row5 col0" id="T_ac4a7_row5_col0">0.662</td>
+<td class="data row5 col1" id="T_ac4a7_row5_col1">0.666</td>
+<td class="data row5 col2" id="T_ac4a7_row5_col2">0.678</td>
+<td class="data row5 col3" id="T_ac4a7_row5_col3">0.684</td>
+<td class="data row5 col4" id="T_ac4a7_row5_col4">0.687</td>
+<td class="data row5 col5" id="T_ac4a7_row5_col5">0.675</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_2e078_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_2e078_foot0_row0_col0">0.686</td>
-<td class="foot0_data foot0_row0 col1" id="T_2e078_foot0_row0_col1">0.683</td>
-<td class="foot0_data foot0_row0 col2" id="T_2e078_foot0_row0_col2">0.684</td>
-<td class="foot0_data foot0_row0 col3" id="T_2e078_foot0_row0_col3">0.686</td>
-<td class="foot0_data foot0_row0 col4" id="T_2e078_foot0_row0_col4">0.690</td>
-<td class="foot0_data foot0_row0 col5" id="T_2e078_foot0_row0_col5">0.686</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_ac4a7_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_ac4a7_foot0_row0_col0">0.686</td>
+<td class="foot0_data foot0_row0 col1" id="T_ac4a7_foot0_row0_col1">0.683</td>
+<td class="foot0_data foot0_row0 col2" id="T_ac4a7_foot0_row0_col2">0.684</td>
+<td class="foot0_data foot0_row0 col3" id="T_ac4a7_foot0_row0_col3">0.686</td>
+<td class="foot0_data foot0_row0 col4" id="T_ac4a7_foot0_row0_col4">0.690</td>
+<td class="foot0_data foot0_row0 col5" id="T_ac4a7_foot0_row0_col5">0.686</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_2e078_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_2e078_foot0_row1_col0">0.015</td>
-<td class="foot0_data foot0_row1 col1" id="T_2e078_foot0_row1_col1">0.013</td>
-<td class="foot0_data foot0_row1 col2" id="T_2e078_foot0_row1_col2">0.012</td>
-<td class="foot0_data foot0_row1 col3" id="T_2e078_foot0_row1_col3">0.008</td>
-<td class="foot0_data foot0_row1 col4" id="T_2e078_foot0_row1_col4">0.010</td>
-<td class="foot0_data foot0_row1 col5" id="T_2e078_foot0_row1_col5">0.012</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_ac4a7_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_ac4a7_foot0_row1_col0">0.015</td>
+<td class="foot0_data foot0_row1 col1" id="T_ac4a7_foot0_row1_col1">0.013</td>
+<td class="foot0_data foot0_row1 col2" id="T_ac4a7_foot0_row1_col2">0.012</td>
+<td class="foot0_data foot0_row1 col3" id="T_ac4a7_foot0_row1_col3">0.008</td>
+<td class="foot0_data foot0_row1 col4" id="T_ac4a7_foot0_row1_col4">0.010</td>
+<td class="foot0_data foot0_row1 col5" id="T_ac4a7_foot0_row1_col5">0.012</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_2e078_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_2e078_foot0_row2_col0">0.671</td>
-<td class="foot0_data foot0_row2 col1" id="T_2e078_foot0_row2_col1">0.670</td>
-<td class="foot0_data foot0_row2 col2" id="T_2e078_foot0_row2_col2">0.673</td>
-<td class="foot0_data foot0_row2 col3" id="T_2e078_foot0_row2_col3">0.678</td>
-<td class="foot0_data foot0_row2 col4" id="T_2e078_foot0_row2_col4">0.680</td>
-<td class="foot0_data foot0_row2 col5" id="T_2e078_foot0_row2_col5">0.674</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_ac4a7_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_ac4a7_foot0_row2_col0">0.671</td>
+<td class="foot0_data foot0_row2 col1" id="T_ac4a7_foot0_row2_col1">0.670</td>
+<td class="foot0_data foot0_row2 col2" id="T_ac4a7_foot0_row2_col2">0.673</td>
+<td class="foot0_data foot0_row2 col3" id="T_ac4a7_foot0_row2_col3">0.678</td>
+<td class="foot0_data foot0_row2 col4" id="T_ac4a7_foot0_row2_col4">0.680</td>
+<td class="foot0_data foot0_row2 col5" id="T_ac4a7_foot0_row2_col5">0.674</td>
 </tr>
 </tbody>
 </table>
@@ -11490,7 +11513,7 @@ This is a Cox proportional hazards model with a linear implementation. This mode
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [120]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [169]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># %%time</span>
@@ -11538,232 +11561,232 @@ This is a Cox proportional hazards model with a linear implementation. This mode
 <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_7e8da_row0_col0 {
+#T_17dba_row0_col0 {
   background-color: #a35cff;
   color: #f1f1f1;
 }
-#T_7e8da_row0_col1 {
+#T_17dba_row0_col1 {
   background-color: #be41ff;
   color: #f1f1f1;
 }
-#T_7e8da_row0_col2 {
+#T_17dba_row0_col2 {
   background-color: #ae51ff;
   color: #f1f1f1;
 }
-#T_7e8da_row0_col3 {
+#T_17dba_row0_col3 {
   background-color: #847bff;
   color: #f1f1f1;
 }
-#T_7e8da_row0_col4 {
+#T_17dba_row0_col4 {
   background-color: #b04fff;
   color: #f1f1f1;
 }
-#T_7e8da_row0_col5, #T_7e8da_row3_col5 {
+#T_17dba_row0_col5, #T_17dba_row3_col5 {
   background-color: #a758ff;
   color: #f1f1f1;
 }
-#T_7e8da_row1_col0 {
+#T_17dba_row1_col0 {
   background-color: #ff00ff;
   color: #f1f1f1;
 }
-#T_7e8da_row1_col1, #T_7e8da_row2_col0 {
+#T_17dba_row1_col1, #T_17dba_row2_col0 {
   background-color: #9966ff;
   color: #f1f1f1;
 }
-#T_7e8da_row1_col2 {
+#T_17dba_row1_col2 {
   background-color: #9867ff;
   color: #f1f1f1;
 }
-#T_7e8da_row1_col3 {
+#T_17dba_row1_col3 {
   background-color: #d12eff;
   color: #f1f1f1;
 }
-#T_7e8da_row1_col4 {
+#T_17dba_row1_col4 {
   background-color: #e718ff;
   color: #f1f1f1;
 }
-#T_7e8da_row1_col5 {
+#T_17dba_row1_col5 {
   background-color: #c837ff;
   color: #f1f1f1;
 }
-#T_7e8da_row2_col1 {
+#T_17dba_row2_col1 {
   background-color: #43bcff;
   color: #000000;
 }
-#T_7e8da_row2_col2 {
+#T_17dba_row2_col2 {
   background-color: #57a8ff;
   color: #f1f1f1;
 }
-#T_7e8da_row2_col3 {
+#T_17dba_row2_col3 {
   background-color: #9d62ff;
   color: #f1f1f1;
 }
-#T_7e8da_row2_col4 {
+#T_17dba_row2_col4 {
   background-color: #6b94ff;
   color: #f1f1f1;
 }
-#T_7e8da_row2_col5 {
+#T_17dba_row2_col5 {
   background-color: #728dff;
   color: #f1f1f1;
 }
-#T_7e8da_row3_col0 {
+#T_17dba_row3_col0 {
   background-color: #c43bff;
   color: #f1f1f1;
 }
-#T_7e8da_row3_col1 {
+#T_17dba_row3_col1 {
   background-color: #c23dff;
   color: #f1f1f1;
 }
-#T_7e8da_row3_col2, #T_7e8da_row4_col1 {
+#T_17dba_row3_col2, #T_17dba_row4_col1 {
   background-color: #a857ff;
   color: #f1f1f1;
 }
-#T_7e8da_row3_col3 {
+#T_17dba_row3_col3 {
   background-color: #8679ff;
   color: #f1f1f1;
 }
-#T_7e8da_row3_col4 {
+#T_17dba_row3_col4 {
   background-color: #8d72ff;
   color: #f1f1f1;
 }
-#T_7e8da_row4_col0 {
+#T_17dba_row4_col0 {
   background-color: #609fff;
   color: #f1f1f1;
 }
-#T_7e8da_row4_col2 {
+#T_17dba_row4_col2 {
   background-color: #6996ff;
   color: #f1f1f1;
 }
-#T_7e8da_row4_col3 {
+#T_17dba_row4_col3 {
   background-color: #758aff;
   color: #f1f1f1;
 }
-#T_7e8da_row4_col4 {
+#T_17dba_row4_col4 {
   background-color: #a15eff;
   color: #f1f1f1;
 }
-#T_7e8da_row4_col5 {
+#T_17dba_row4_col5 {
   background-color: #817eff;
   color: #f1f1f1;
 }
-#T_7e8da_row5_col0 {
+#T_17dba_row5_col0 {
   background-color: #08f7ff;
   color: #000000;
 }
-#T_7e8da_row5_col1 {
+#T_17dba_row5_col1 {
   background-color: #00ffff;
   color: #000000;
 }
-#T_7e8da_row5_col2 {
+#T_17dba_row5_col2 {
   background-color: #649bff;
   color: #f1f1f1;
 }
-#T_7e8da_row5_col3 {
+#T_17dba_row5_col3 {
   background-color: #639cff;
   color: #f1f1f1;
 }
-#T_7e8da_row5_col4 {
+#T_17dba_row5_col4 {
   background-color: #7a85ff;
   color: #f1f1f1;
 }
-#T_7e8da_row5_col5 {
+#T_17dba_row5_col5 {
   background-color: #42bdff;
   color: #000000;
 }
 </style>
-<table id="T_7e8da">
+<table id="T_17dba">
 <thead>
 <tr>
 <th class="blank level0"> </th>
-<th class="col_heading level0 col0" id="T_7e8da_level0_col0">0</th>
-<th class="col_heading level0 col1" id="T_7e8da_level0_col1">1</th>
-<th class="col_heading level0 col2" id="T_7e8da_level0_col2">2</th>
-<th class="col_heading level0 col3" id="T_7e8da_level0_col3">3</th>
-<th class="col_heading level0 col4" id="T_7e8da_level0_col4">4</th>
-<th class="col_heading level0 col5" id="T_7e8da_level0_col5">Overall</th>
+<th class="col_heading level0 col0" id="T_17dba_level0_col0">0</th>
+<th class="col_heading level0 col1" id="T_17dba_level0_col1">1</th>
+<th class="col_heading level0 col2" id="T_17dba_level0_col2">2</th>
+<th class="col_heading level0 col3" id="T_17dba_level0_col3">3</th>
+<th class="col_heading level0 col4" id="T_17dba_level0_col4">4</th>
+<th class="col_heading level0 col5" id="T_17dba_level0_col5">Overall</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th class="row_heading level0 row0" id="T_7e8da_level0_row0">American Indian or Alaska Native</th>
-<td class="data row0 col0" id="T_7e8da_row0_col0">0.675</td>
-<td class="data row0 col1" id="T_7e8da_row0_col1">0.682</td>
-<td class="data row0 col2" id="T_7e8da_row0_col2">0.678</td>
-<td class="data row0 col3" id="T_7e8da_row0_col3">0.667</td>
-<td class="data row0 col4" id="T_7e8da_row0_col4">0.678</td>
-<td class="data row0 col5" id="T_7e8da_row0_col5">0.676</td>
+<th class="row_heading level0 row0" id="T_17dba_level0_row0">American Indian or Alaska Native</th>
+<td class="data row0 col0" id="T_17dba_row0_col0">0.675</td>
+<td class="data row0 col1" id="T_17dba_row0_col1">0.682</td>
+<td class="data row0 col2" id="T_17dba_row0_col2">0.678</td>
+<td class="data row0 col3" id="T_17dba_row0_col3">0.667</td>
+<td class="data row0 col4" id="T_17dba_row0_col4">0.678</td>
+<td class="data row0 col5" id="T_17dba_row0_col5">0.676</td>
 </tr>
 <tr>
-<th class="row_heading level0 row1" id="T_7e8da_level0_row1">Asian</th>
-<td class="data row1 col0" id="T_7e8da_row1_col0">0.699</td>
-<td class="data row1 col1" id="T_7e8da_row1_col1">0.672</td>
-<td class="data row1 col2" id="T_7e8da_row1_col2">0.672</td>
-<td class="data row1 col3" id="T_7e8da_row1_col3">0.687</td>
-<td class="data row1 col4" id="T_7e8da_row1_col4">0.693</td>
-<td class="data row1 col5" id="T_7e8da_row1_col5">0.685</td>
+<th class="row_heading level0 row1" id="T_17dba_level0_row1">Asian</th>
+<td class="data row1 col0" id="T_17dba_row1_col0">0.699</td>
+<td class="data row1 col1" id="T_17dba_row1_col1">0.672</td>
+<td class="data row1 col2" id="T_17dba_row1_col2">0.672</td>
+<td class="data row1 col3" id="T_17dba_row1_col3">0.687</td>
+<td class="data row1 col4" id="T_17dba_row1_col4">0.693</td>
+<td class="data row1 col5" id="T_17dba_row1_col5">0.685</td>
 </tr>
 <tr>
-<th class="row_heading level0 row2" id="T_7e8da_level0_row2">Black or African-American</th>
-<td class="data row2 col0" id="T_7e8da_row2_col0">0.672</td>
-<td class="data row2 col1" id="T_7e8da_row2_col1">0.650</td>
-<td class="data row2 col2" id="T_7e8da_row2_col2">0.655</td>
-<td class="data row2 col3" id="T_7e8da_row2_col3">0.673</td>
-<td class="data row2 col4" id="T_7e8da_row2_col4">0.661</td>
-<td class="data row2 col5" id="T_7e8da_row2_col5">0.662</td>
+<th class="row_heading level0 row2" id="T_17dba_level0_row2">Black or African-American</th>
+<td class="data row2 col0" id="T_17dba_row2_col0">0.672</td>
+<td class="data row2 col1" id="T_17dba_row2_col1">0.650</td>
+<td class="data row2 col2" id="T_17dba_row2_col2">0.655</td>
+<td class="data row2 col3" id="T_17dba_row2_col3">0.673</td>
+<td class="data row2 col4" id="T_17dba_row2_col4">0.661</td>
+<td class="data row2 col5" id="T_17dba_row2_col5">0.662</td>
 </tr>
 <tr>
-<th class="row_heading level0 row3" id="T_7e8da_level0_row3">More than one race</th>
-<td class="data row3 col0" id="T_7e8da_row3_col0">0.684</td>
-<td class="data row3 col1" id="T_7e8da_row3_col1">0.683</td>
-<td class="data row3 col2" id="T_7e8da_row3_col2">0.677</td>
-<td class="data row3 col3" id="T_7e8da_row3_col3">0.667</td>
-<td class="data row3 col4" id="T_7e8da_row3_col4">0.669</td>
-<td class="data row3 col5" id="T_7e8da_row3_col5">0.676</td>
+<th class="row_heading level0 row3" id="T_17dba_level0_row3">More than one race</th>
+<td class="data row3 col0" id="T_17dba_row3_col0">0.684</td>
+<td class="data row3 col1" id="T_17dba_row3_col1">0.683</td>
+<td class="data row3 col2" id="T_17dba_row3_col2">0.677</td>
+<td class="data row3 col3" id="T_17dba_row3_col3">0.667</td>
+<td class="data row3 col4" id="T_17dba_row3_col4">0.669</td>
+<td class="data row3 col5" id="T_17dba_row3_col5">0.676</td>
 </tr>
 <tr>
-<th class="row_heading level0 row4" id="T_7e8da_level0_row4">Native Hawaiian or other Pacific Islander</th>
-<td class="data row4 col0" id="T_7e8da_row4_col0">0.657</td>
-<td class="data row4 col1" id="T_7e8da_row4_col1">0.676</td>
-<td class="data row4 col2" id="T_7e8da_row4_col2">0.660</td>
-<td class="data row4 col3" id="T_7e8da_row4_col3">0.663</td>
-<td class="data row4 col4" id="T_7e8da_row4_col4">0.675</td>
-<td class="data row4 col5" id="T_7e8da_row4_col5">0.666</td>
+<th class="row_heading level0 row4" id="T_17dba_level0_row4">Native Hawaiian or other Pacific Islander</th>
+<td class="data row4 col0" id="T_17dba_row4_col0">0.657</td>
+<td class="data row4 col1" id="T_17dba_row4_col1">0.676</td>
+<td class="data row4 col2" id="T_17dba_row4_col2">0.660</td>
+<td class="data row4 col3" id="T_17dba_row4_col3">0.663</td>
+<td class="data row4 col4" id="T_17dba_row4_col4">0.675</td>
+<td class="data row4 col5" id="T_17dba_row4_col5">0.666</td>
 </tr>
 <tr>
-<th class="row_heading level0 row5" id="T_7e8da_level0_row5">White</th>
-<td class="data row5 col0" id="T_7e8da_row5_col0">0.634</td>
-<td class="data row5 col1" id="T_7e8da_row5_col1">0.632</td>
-<td class="data row5 col2" id="T_7e8da_row5_col2">0.659</td>
-<td class="data row5 col3" id="T_7e8da_row5_col3">0.658</td>
-<td class="data row5 col4" id="T_7e8da_row5_col4">0.664</td>
-<td class="data row5 col5" id="T_7e8da_row5_col5">0.650</td>
+<th class="row_heading level0 row5" id="T_17dba_level0_row5">White</th>
+<td class="data row5 col0" id="T_17dba_row5_col0">0.634</td>
+<td class="data row5 col1" id="T_17dba_row5_col1">0.632</td>
+<td class="data row5 col2" id="T_17dba_row5_col2">0.659</td>
+<td class="data row5 col3" id="T_17dba_row5_col3">0.658</td>
+<td class="data row5 col4" id="T_17dba_row5_col4">0.664</td>
+<td class="data row5 col5" id="T_17dba_row5_col5">0.650</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row0" id="T_7e8da_level0_foot0_row0">mean</th>
-<td class="foot0_data foot0_row0 col0" id="T_7e8da_foot0_row0_col0">0.670</td>
-<td class="foot0_data foot0_row0 col1" id="T_7e8da_foot0_row0_col1">0.666</td>
-<td class="foot0_data foot0_row0 col2" id="T_7e8da_foot0_row0_col2">0.667</td>
-<td class="foot0_data foot0_row0 col3" id="T_7e8da_foot0_row0_col3">0.669</td>
-<td class="foot0_data foot0_row0 col4" id="T_7e8da_foot0_row0_col4">0.673</td>
-<td class="foot0_data foot0_row0 col5" id="T_7e8da_foot0_row0_col5">0.669</td>
+<th class="foot0_row_heading level0 foot0_row0" id="T_17dba_level0_foot0_row0">mean</th>
+<td class="foot0_data foot0_row0 col0" id="T_17dba_foot0_row0_col0">0.670</td>
+<td class="foot0_data foot0_row0 col1" id="T_17dba_foot0_row0_col1">0.666</td>
+<td class="foot0_data foot0_row0 col2" id="T_17dba_foot0_row0_col2">0.667</td>
+<td class="foot0_data foot0_row0 col3" id="T_17dba_foot0_row0_col3">0.669</td>
+<td class="foot0_data foot0_row0 col4" id="T_17dba_foot0_row0_col4">0.673</td>
+<td class="foot0_data foot0_row0 col5" id="T_17dba_foot0_row0_col5">0.669</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row1" id="T_7e8da_level0_foot0_row1">std</th>
-<td class="foot0_data foot0_row1 col0" id="T_7e8da_foot0_row1_col0">0.020</td>
-<td class="foot0_data foot0_row1 col1" id="T_7e8da_foot0_row1_col1">0.019</td>
-<td class="foot0_data foot0_row1 col2" id="T_7e8da_foot0_row1_col2">0.009</td>
-<td class="foot0_data foot0_row1 col3" id="T_7e8da_foot0_row1_col3">0.009</td>
-<td class="foot0_data foot0_row1 col4" id="T_7e8da_foot0_row1_col4">0.011</td>
-<td class="foot0_data foot0_row1 col5" id="T_7e8da_foot0_row1_col5">0.014</td>
+<th class="foot0_row_heading level0 foot0_row1" id="T_17dba_level0_foot0_row1">std</th>
+<td class="foot0_data foot0_row1 col0" id="T_17dba_foot0_row1_col0">0.020</td>
+<td class="foot0_data foot0_row1 col1" id="T_17dba_foot0_row1_col1">0.019</td>
+<td class="foot0_data foot0_row1 col2" id="T_17dba_foot0_row1_col2">0.009</td>
+<td class="foot0_data foot0_row1 col3" id="T_17dba_foot0_row1_col3">0.009</td>
+<td class="foot0_data foot0_row1 col4" id="T_17dba_foot0_row1_col4">0.011</td>
+<td class="foot0_data foot0_row1 col5" id="T_17dba_foot0_row1_col5">0.014</td>
 </tr>
 <tr>
-<th class="foot0_row_heading level0 foot0_row2" id="T_7e8da_level0_foot0_row2">score</th>
-<td class="foot0_data foot0_row2 col0" id="T_7e8da_foot0_row2_col0">0.650</td>
-<td class="foot0_data foot0_row2 col1" id="T_7e8da_foot0_row2_col1">0.647</td>
-<td class="foot0_data foot0_row2 col2" id="T_7e8da_foot0_row2_col2">0.658</td>
-<td class="foot0_data foot0_row2 col3" id="T_7e8da_foot0_row2_col3">0.660</td>
-<td class="foot0_data foot0_row2 col4" id="T_7e8da_foot0_row2_col4">0.663</td>
-<td class="foot0_data foot0_row2 col5" id="T_7e8da_foot0_row2_col5">0.656</td>
+<th class="foot0_row_heading level0 foot0_row2" id="T_17dba_level0_foot0_row2">score</th>
+<td class="foot0_data foot0_row2 col0" id="T_17dba_foot0_row2_col0">0.650</td>
+<td class="foot0_data foot0_row2 col1" id="T_17dba_foot0_row2_col1">0.647</td>
+<td class="foot0_data foot0_row2 col2" id="T_17dba_foot0_row2_col2">0.658</td>
+<td class="foot0_data foot0_row2 col3" id="T_17dba_foot0_row2_col3">0.660</td>
+<td class="foot0_data foot0_row2 col4" id="T_17dba_foot0_row2_col4">0.663</td>
+<td class="foot0_data foot0_row2 col5" id="T_17dba_foot0_row2_col5">0.656</td>
 </tr>
 </tbody>
 </table>
@@ -11800,7 +11823,7 @@ The AFT models (green) perhaps need more hyperparameter tuning.</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [121]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [170]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">result_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">all_model_scores</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="p">[</span><span class="s1">'score'</span><span class="p">])</span><span class="o">.</span><span class="n">T</span>
@@ -11854,7 +11877,7 @@ let's delve deeper into what features it cared about most:</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [145]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [171]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">feature_importances</span> <span class="o">=</span> <span class="p">[]</span>
@@ -11937,8 +11960,8 @@ let's delve deeper into what features it cared about most:</p>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>These results make a lot of sense!<br/>
-The <code>conditioning_intensity</code> describes how was a patient's body prepared for HCT.<br/>
-Other top features (<code>dri_score</code>, <code>comorbidity_score</code>, etc.) include various scores the are given to patients to determine their health before HCT.</p>
+The <code>conditioning_intensity</code> describes how a patient's body was prepared for HCT.<br/>
+Other top features include various scores (<code>dri_score</code>, <code>comorbidity_score</code>, etc.) the are given to patients to determine their health before HCT.</p>
 </div>
 </div>
 </div>
@@ -11964,10 +11987,10 @@ a possible strategy could be to artificially make the predictions for Asian pati
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h3 id="Working-environment">Working environment<a class="anchor-link" href="#Working-environment">¶</a></h3><p>As we heard many disrecommendations for Kaggle notebooks as a work environment, we immediately skipped that option.</p>
 <p>First we tried Google collab, but it proved difficult to work in,<br/>
-as the platform has no intellisense, and no real realtime abillities.</p>
+as the platform has bad intellisense, and no real realtime abillities.</p>
 <p>We decided to switch to a rather newer option, Deepnote.<br/>
 It was easier to work there, due to having built in intellisense, realtime collaboration, and pretty UI.<br/>
-But it made it really hard to work with text/markdown blocks.</p>
+But for some reason, they made it really hard to work with text/markdown blocks.</p>
 <p>We ended up working locally in VSCode by setting up a virtual environment,<br/>
 and using the Live Share extension for realtime collaboration.<br/>
 It wasn't super hard to set up, and is pretty easy to work with.<br/>
