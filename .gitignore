@@ -255,3 +255,5 @@ pip-selfcheck.json
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,visualstudiocode,python,venv,jupyternotebooks
 >>>>>>> 87e648d (Updated .gitignore and removed cached files)
+catboost_info/
+__pycache__/
