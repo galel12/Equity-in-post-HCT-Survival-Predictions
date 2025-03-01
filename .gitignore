@@ -126,6 +126,9 @@ docs/_build/
 .pybuilder/
 target/
 
+# Cat Boost
+catboost_info/
+
 # Jupyter Notebook
 
 # IPython
