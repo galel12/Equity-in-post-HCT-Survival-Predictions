@@ -13,3 +13,4 @@ catboost
 itables
 optuna
 statsmodels
+humanize
