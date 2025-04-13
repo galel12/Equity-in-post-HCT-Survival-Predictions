@@ -11,6 +11,4 @@ lifelines
 xgboost
 catboost
 itables
-optuna
-statsmodels
 humanize
