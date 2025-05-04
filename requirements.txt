@@ -6,9 +6,12 @@ matplotlib
 seaborn
 scipy
 scikit-learn
+scikit-survival
 nbconvert
 lifelines
 xgboost
 catboost
 itables
 humanize
+networkx
+shap
