@@ -4,6 +4,12 @@
   <img src="assets/header.png" width="25%" style="border-radius:20px;" />
 </p>
 
+<p align="center">
+  <a href="https://nbviewer.org/github/galel12/Equity-in-post-HCT-Survival-Predictions/blob/main/notebooks/notebook.ipynb">
+    <img src="https://img.shields.io/badge/Open%20Notebook-nbviewer-orange" alt="nbviewer badge"/>
+  </a>
+</p>
+
 ## Introduction
 
 We are Gal Elharar and Roy Wolfer, computer science students passionate about data science and its real-world impact, particularly in healthcare. For our semester project, we wanted to work on something meaningful and socially relevant. The [Equity in post-HCT Survival Predictions](https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions) Kaggle competition offered exactly that.
