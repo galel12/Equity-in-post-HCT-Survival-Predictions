@@ -1,7 +1,7 @@
 # Equity in Post-HCT Survival Predictions
 
 <p align="center">
-  <img src="header.png" width="25%" style="border-radius:20px;" />
+  <img src="assets/header.png" width="25%" style="border-radius:20px;" />
 </p>
 
 ## Introduction
