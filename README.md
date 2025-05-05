@@ -1,75 +1,108 @@
 # Equity in Post-HCT Survival Predictions
 
-<center><img src="header.png" width="25%" style="border-radius:20px;" /></center>
+<p align="center">
+  <img src="header.png" width="25%" style="border-radius:20px;" />
+</p>
 
 ## Introduction
 
-We are Gal Elharar and Roy Wolfer, computer science students with a strong passion for data science and its applications in healthcare. For our semester project, we sought to tackle a meaningful challenge while expanding our skill set. After exploring Kaggle competitions, we were immediately drawn to the [Equity in post-HCT Survival Predictions](https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions) challenge.
+We are Gal Elharar and Roy Wolfer, computer science students passionate about data science and its real-world impact, particularly in healthcare. For our semester project, we wanted to work on something meaningful and socially relevant. The [Equity in post-HCT Survival Predictions](https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions) Kaggle competition offered exactly that.
 
-This competition focuses on predicting survival probabilities for patients undergoing hematopoietic cell transplantation (HCT), with an emphasis on ensuring equitable outcomes across different racial groups. The evaluation metric used in this challenge is the Stratified Concordance Index (C-index), which adjusts for racial stratification to promote fairness and equity in the predictions. This makes the challenge particularly impactful in addressing disparities in healthcare outcomes.
+This challenge focuses on predicting survival probabilities for patients undergoing hematopoietic cell transplantation (HCT), with a strong emphasis on *equitable* outcomes across racial groups. It uses a **Stratified Concordance Index (C-index)** to evaluate how fair and accurate predictions are across subpopulations—highlighting the ethical side of AI in medicine.
 
-We are excited to dive into this project, combining our data science skills with our interest in advancing equity in medicine.
+---
 
-## The Problem
+## Problem Statement
 
-Improving survival predictions for allogeneic HCT patients is a vital healthcare challenge. Current predictive models often fall short in addressing disparities related to socioeconomic status, race, and geography. Addressing these gaps is crucial for enhancing patient care, optimizing resource utilization, and rebuilding trust in the healthcare system.
+Survival prediction in HCT is complicated by social, racial, and economic disparities. Most existing models don't account for these factors, leading to biased care recommendations.
 
-This competition aims to encourage participants to advance predictive modeling by ensuring that survival predictions are both precise and fair for patients across diverse groups. By using synthetic data, which mirrors real-world situations while protecting patient privacy, participants can build and improve models that more effectively consider diverse backgrounds and conditions.
+The competition asks participants to develop models that are **both accurate and fair**, using synthetic clinical data designed to mimic real-world patterns while preserving privacy. Our goal was to build such models—maximizing predictive performance while minimizing inequality across race groups.
 
-You’re challenged to develop advanced predictive models for allogeneic HCT that enhance both accuracy and fairness in survival predictions. The goal is to address disparities by bridging diverse data sources, refining algorithms, and reducing biases to ensure equitable outcomes for patients across diverse race groups. Your work will help create a more just and effective healthcare environment, ensuring every patient receives the care they deserve.
+---
 
-## Methodology
+## Our Approach
 
-### Data Exploration and Preprocessing
+### 🧪 Data Exploration & Preprocessing
+- **Missing Values**: Handled as separate categories for categorical features.
+- **Feature Importance & Correlation**: Used to reduce redundancy.
+- **Feature Reduction**: Found marginal improvement after removing the least informative features.
 
-- **Reading the Data**: We started by reading the training and test datasets, observing the features and their distributions.
-- **Handling Missing Values**: We chose to treat missing values as a separate category for categorical features.
-- **Feature Correlation**: We explored the relationships between numerical features to identify redundant features.
+### 🧠 Modeling
+We built and compared multiple survival models:
 
-### Survival Analysis Models
+#### 🔹 Basic Models
+| Model | Type | Tool |
+|---|---|---|
+| Cox Proportional Hazards | Linear | `lifelines` |
+| Cox PH | Gradient Boosted | `XGBoost`, `CatBoost` |
+| Accelerated Failure Time (AFT) | Gradient Boosted | `XGBoost`, `CatBoost` |
 
-We experimented with various survival analysis models, including:
+#### 🔸 Target Transformation Models
 
-- **Cox Proportional Hazards Model**: Implemented using both XGBoost and CatBoost.
-- **Accelerated Failure Time Model**: Implemented using both XGBoost and CatBoost.
-- **Target Transformation Models**: Applied different target transformations to use regression algorithms with MSE loss.
+To apply regression models with MSE loss, we transformed the time-to-event targets into more learnable forms. These transformations emphasized ranking patients by event timing.
 
-### Evaluation
+We tested five variants:
+- **Survival Probability**: Maps time to Kaplan–Meier survival estimates, assigning lower probabilities to earlier events.
+- **Partial Hazard**: Uses Cox model outputs to guide ranking.
+- **Separate**: Assigns distinct values to events vs. non-events.
+- **Rank Log**: Applies log-rank scaling for smoother separation.
+- **Quantile (Best)**: Uniformly spreads events from 0–1, sets non-events to a fixed negative value.
 
-The competition's objective is to ensure equitable predictions across diverse patient populations. We evaluated our models using the Stratified Concordance Index (C-index) and compared the performance across different race groups.
+> The **Quantile transformation** yielded our highest c-index, slightly outperforming the Cox baseline while being simple and efficient.
+
+---
+
+## Evaluation Strategy
+
+We evaluated models using:
+- **Stratified C-index** (main metric)
+- **t-AUC** (time-dependent AUC)
+- **Fairness across race groups**
+
+> Key decision: We prioritized *c-index* over *t-AUC* in final model selection, in alignment with the competition’s goal.
+
+---
 
 ## Results
 
-### Best Performing Models
+### 🏆 Best Models
+- **Cox PH with XGBoost**: Strongest baseline and final model (after transformation).
+- **Transform Quantile + XGBoost (MSE)**: Slightly improved C-index and fairness after tuning.
 
-- **Cox Proportional Hazards Model (XGBoost)**: Achieved the highest overall score.
-- **Target Transformation Models**: The `transform_quantile` transformation performed the best among the target transformations.
+### 📈 Hyperparameter Tuning
+Using **Optuna**, we improved:
+- Overall C-index.
+- Group consistency (lower standard deviation).
+- Group mean, showing better generalization.
 
-### Feature Importance
+### ⚖️ Fairness Findings
+- Asian patients had consistently high prediction scores.
+- White patients had the lowest scores.
+- Our model aimed to **balance** performance across all six racial groups, accepting slight tradeoffs in global metrics for equity.
 
-The most important features included `conditioning_intensity`, `dri_score`, and `comorbidity_score`, reflecting the physical state of the patient before HCT.
+---
 
-### Race Group Inequality
+## Reflections
 
-We observed that predictions for Asian patients generally had the highest scores, while predictions for white patients had the lowest scores. This highlights the need for strategies to ensure equitable predictions across all race groups.
+This project wasn’t just about leaderboard scores—it was about learning how to build **responsible, fair, and interpretable models**. We learned that behind every data point is a patient, and that equity in modeling is not a “bonus” feature, but a core requirement in healthcare AI.
 
-## Conclusion
-
-Our project demonstrates the potential of advanced predictive models to enhance both accuracy and fairness in survival predictions for HCT patients. By addressing disparities and ensuring equitable outcomes, we contribute to creating a more just and effective healthcare environment.
+---
 
 ## Working Environment
 
-We initially tried Google Colab and Deepnote but found them challenging for real-time collaboration and intellisense. We ultimately worked locally in VSCode using a virtual environment and the Live Share extension, which provided a more efficient and collaborative working environment.
+We tested several platforms before settling on **VSCode + Live Share**, with a Python virtual environment. This gave us real-time collaboration, full intellisense, and smooth workflow compared to Colab or Deepnote.
+
+---
 
 ## Acknowledgements
 
-We would like to thank Kaggle for providing the platform and data for this competition. We also appreciate the support and guidance from our professors and peers throughout this project.
+Thanks to Kaggle for the platform and synthetic dataset, and to our university instructors for their support throughout the project.
+
+---
 
 ## References
 
-- [Equity in post-HCT Survival Predictions](https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions)
 - [Kaplan–Meier Estimator](https://en.wikipedia.org/wiki/Kaplan%E2%80%93Meier_estimator)
-- [Nelson–Aalen Estimator](https://en.wikipedia.org/wiki/Nelson%E2%80%93Aalen_estimator)
 - [Cox Proportional Hazards Model](https://en.wikipedia.org/wiki/Proportional_hazards_model)
 - [Accelerated Failure Time Model](https://en.wikipedia.org/wiki/Accelerated_failure_time_model)
-
+- [Optuna: Hyperparameter Optimization](https://optuna.org/)
